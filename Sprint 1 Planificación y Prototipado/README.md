@@ -41,18 +41,28 @@ Así, entonces, el equipo deberá presentar un **plan detallado de creación de 
 2. **Plan de diseño de la interfaz**  
    * Definición de requerimientos funcionales y estéticos.  
    * Elaboración de **bocetos (wireframes)** de la página de inicio y una sección interior (puede hacerse en papel o en herramientas como Figma, Canva, Balsamiq…).  
-     En nuestro caso hemos usado FIGMA para la realización de los Wireframe y Mockup hemos hecho una página de login y registro de la web, nos faltaria hacer el dashboard.   
+     En nuestro caso hemos usado FIGMA para la realización de los Wireframe y Mockup hemos hecho una página de login y registro de la web, nos faltaria hacer el dashboard.
+
+   * Wireframe Login y Registro 
 <img width="812" height="557" alt="wireframe" src="https://github.com/user-attachments/assets/7305f605-ea9c-4a2b-a058-a93abb293aa6" />
 
+   * Wireframe Dashboard
+<img width="861" height="588" alt="Wireframe - dashboard" src="https://github.com/user-attachments/assets/6a0e7ba2-ff73-453e-a1da-7381d4a191c3" />
+
        
-   * Mockup (Modo oscuro)
+   * Mockup Login y Registro (Modo oscuro)
 <img width="1599" height="592" alt="Mockup - negro" src="https://github.com/user-attachments/assets/6efe1b27-3298-41a2-9885-b28fb801b59b" />
 
 
-   * Mockup (Modo claro)
+   * Mockup Login y Registro (Modo claro)
 
 <img width="1299" height="508" alt="Mockup - blanco" src="https://github.com/user-attachments/assets/a88b91f5-4041-4c7e-af7f-8a33f55e6124" />
 
+   * Mockup Dashboard (Modo oscuro)
+<img width="1297" height="805" alt="Mockup -Dashboard - negro" src="https://github.com/user-attachments/assets/939d1e2e-fff9-4536-ad78-e90362f292d2" />
+
+   * Mockup Dashboard (Modo claro)
+<img width="1550" height="820" alt="Mockup -Dashboard - blanco" src="https://github.com/user-attachments/assets/52337165-5b0b-4e3f-80df-20e9e4c93183" />
 
 *  Prototipo.  
   Se hara un prototipo inicial usando HTML semántico, CSS y algo de Javascript  
@@ -141,9 +151,31 @@ Por último, en la **fase de ajustes** (1 semana) se corrigen las incidencias de
 Esta planificación permite avanzar de forma progresiva, dedicando más tiempo a la fase de diseño por ser la más importante para el correcto funcionamiento del sistema.
 
 4. **Presupuesto básico**  
-   * Estimar costes de recursos humanos (horas de trabajo del equipo).  
-   * Herramientas o licencias necesarias.  
+   * Estimar costes de recursos humanos (horas de trabajo del equipo).
+El principal recurso del proyecto es el tiempo dedicado por los integrantes del equipo. El proyecto está formado por 3 miembros, estimando aproximadamente 200 horas de trabajo por persona durante el desarrollo. Estas horas incluyen tareas de análisis, diseño, programación, pruebas, documentación y corrección de errores.
+
+Somos 3 miembros en el equipo:
+Cada miembro cobrará por hora 9 euros x las horas estimadas que son 200 hr de trabajo equivale a un total de 1.800 euros por persona y hace un total de gasto solamente en horas de 5.400 euros
+  
+   * Herramientas o licencias necesarias.
+Se utilizarán principalmente herramientas gratuitas o de código abierto para reducir los costes del proyecto:
+
+Visual Studio Code: editor de código gratuito.
+Node.js y Express: tecnologías gratuitas y de código abierto para el backend.
+Angular: framework gratuito y de código abierto para el frontend.
+MySQL: sistema de gestión de bases de datos disponible en una edición gratuita.
+Git y GitHub: utilizados para el control de versiones y trabajo colaborativo.
+Figma: utilizado para el diseño y prototipado de la interfaz, utilizando las funcionalidades disponibles en su plan gratuito.
+
+Coste estimado de licencias: 0 €, siempre que se utilicen las versiones y planes gratuitos.
+
    * Otros gastos (pruebas de usuarios, imágenes, iconos, etc.).
+También se han considerado posibles gastos relacionados con el desarrollo:
+
+Pruebas con usuarios: 0 €, realizadas con compañeros, profesores o usuarios cercanos.
+Imágenes e iconos: 0 €, utilizando recursos gratuitos o iconos incluidos en librerías de uso permitido.
+Dominio y alojamiento: no necesarios durante la fase de desarrollo. En caso de publicar la aplicación, supondrían un coste adicional.
+Servidor/base de datos de producción: no necesario durante el desarrollo, ya que se puede trabajar mediante un entorno local.
 
 # Duración y entrega
 
