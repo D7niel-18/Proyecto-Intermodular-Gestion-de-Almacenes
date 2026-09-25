@@ -5,12 +5,6 @@
 
 Memoria del Proyecto Intermodular · DAW
 
-# 
-
-# 
-
-# 
-
 # Declaración de autoría y originalidad
 
 Los integrantes del equipo declaramos que el presente proyecto ha sido realizado de forma conjunta por nosotros y que el contenido desarrollado es **original y fruto de nuestro propio trabajo**.
