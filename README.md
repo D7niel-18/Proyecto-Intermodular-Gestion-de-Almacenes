@@ -1,5 +1,5 @@
   
-## ***StockLink***
+#### ***StockLink***
 
 *Sistema de gestión de stock multiempresa*
 
