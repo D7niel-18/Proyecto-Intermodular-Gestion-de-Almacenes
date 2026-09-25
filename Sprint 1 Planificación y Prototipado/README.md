@@ -134,15 +134,12 @@ En conjunto, ambos temas mantienen una identidad visual común, compartiendo est
    * Dividir el proyecto en fases (análisis, diseño, validación, ajustes).  
    * Representar los tiempos estimados en una tabla o diagrama de Gantt sencillo.
 
-**Fase**          	   S1 		   S2 		  S3   		S4  		 S5 
-
-**Análisis**    	 ███
-
-**Diseño**           			  ███	  	███
-
-**Validación**                  					 ███
-
-**Ajustes**                        						          ███
+| **Fase** | **S1** | **S2** | **S3** | **S4** | **S5** |
+|---|---|---|---|---|---|
+| **Análisis** | 🟦 | | | | |
+| **Diseño** | | 🟦 | 🟦 | | |
+| **Validación** | | | | 🟦 | |
+| **Ajustes** | | | | | 🟦 |
 
 **Cronograma de ejecución**
 
