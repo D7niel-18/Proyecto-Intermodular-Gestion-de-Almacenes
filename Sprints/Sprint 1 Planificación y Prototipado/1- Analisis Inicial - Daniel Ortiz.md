@@ -1,7 +1,7 @@
 # Sprint 1 - Análisis inicial
 
+1. **Análisis inicial**
 
-1. **Análisis inicial**  
    * Identificación del público objetivo.
 
 - El análisis del público objetivo se ha realizado teniendo en cuenta que la aplicación está destinada a la gestión de stock de diferentes empresas y locales, por lo que sus usuarios presentan perfiles, necesidades y contextos de uso distintos. Identificar estos perfiles permite orientar las decisiones de diseño hacia una experiencia sencilla, clara e intuitiva.
