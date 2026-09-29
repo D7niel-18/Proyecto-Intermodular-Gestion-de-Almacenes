@@ -93,8 +93,6 @@ StockLink es una aplicación web de gestión de inventario pensada para pequeña
 
 ## 1.2. Problema o necesidad detectada
 
-## 1.2. Problema o necesidad detectada
-
 Las empresas objetivo carecen de una herramienta para controlar su stock: la información se dispersa entre distintos locales y formatos (Excel, papel o memoria), lo que dificulta tener una visión actualizada y continua del inventario. De hecho, según Acelera pyme, el portal del Gobierno de España para las pymes, uno de los errores más comunes en la gestión de stock es precisamente no contar con un software especializado y controlar el inventario con Excel, libreta o de memoria, lo que provoca errores en el inventario (https://www.acelerapyme.gob.es/novedades/pildora/los-errores-mas-comunes-en-la-gestion-de-stock). Esto provoca roturas de stock, sobrestock y pérdida de tiempo en tareas manuales que podrían automatizarse.
 
 Además, cuando una empresa tiene varios negocios, la situación empeora: las herramientas actuales del mercado (Zoho Inventory, inFlow Inventory, Sortly) permiten gestionar varios almacenes, pero siempre dentro de una misma empresa. Si un usuario tiene varios negocios independientes, hoy necesita crear y manejar varias cuentas por separado, perdiendo la visión de conjunto.
