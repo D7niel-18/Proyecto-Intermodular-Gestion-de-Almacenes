@@ -55,7 +55,7 @@ Prototipo (Alta Fidelidad y Dinámico — La Interacción) Es una simulación in
 
 **Figura 1\.** Wireframe de la pantalla de inicio de sesión.
 
-![][image1]
+
 
 **Figura 2\.** Wireframe del dashboard.
 
