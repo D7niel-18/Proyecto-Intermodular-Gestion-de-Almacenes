@@ -59,7 +59,7 @@ Prototipo (Alta Fidelidad y Dinámico — La Interacción) Es una simulación in
 
 **Figura 2\.** Wireframe del dashboard.
 
-![wireframe-dash](Sprints/Sprint%201%20Planificación%20y%20Prototipado/Wireframe%20-%20Mockup%20-%20Prototipo/wireframe.png)
+![Wireframe dashboard](Sprints/Sprint%201%20Planificación%20y%20Prototipado/Wireframe%20-%20Mockup%20-%20Prototipo/Wireframe%20-%20dashboard.png)
 
 **Figura 3\.** Mockup Login y Registro (Modo oscuro y Claro)
 
