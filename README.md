@@ -117,28 +117,78 @@ Se trata, además, de usuarios con un nivel tecnológico medio-bajo, por lo que 
 
 ### 1.4.1. Objetivo general
 
-Planificar y diseñar una interfaz web de gestión de inventario multiempresa que centralice la información de stock de varios locales, aplicando especificaciones de diseño coherentes que garanticen una experiencia de usuario (UX) clara y profesional.
+Desarrollar una aplicación web de gestión de inventario multiempresa que permita **centralizar y facilitar el control del stock de diferentes empresas y locales desde una única plataforma**, proporcionando una gestión sencilla de productos, categorías y existencias, así como avisos de stock bajo.
+
+La aplicación busca **reducir errores en la gestión manual del inventario, evitar roturas de stock y mejorar la eficiencia en el control de las existencias**, ofreciendo una interfaz clara, intuitiva y accesible para los usuarios.
 
 ### 1.4.2. Objetivos específicos
 
 | Ámbito | Objetivo |
 | :---- | :---- |
-| Centralización | Centralizar el stock de varias empresas/locales en una sola sesión, con navegación clara entre ellos. |
-| Tiempo real | Visibilidad en tiempo real de las existencias y alertas de stock bajo. |
-| Eficiencia | Minimizar los clics necesarios para registrar movimientos de stock. |
-| Escalabilidad | Escalar correctamente tanto para 1 local como para 10\. |
-| Usabilidad | Jerarquía visual clara y uso funcional del color (alertas, estados). |
-| Percepción de marca | Transmitir fiabilidad y profesionalidad. |
+| Claridad | Diseñar una interfaz clara y ordenada que permita identificar rápidamente la información y las acciones disponibles. |
+| Usabilidad | Crear una interfaz sencilla e intuitiva para usuarios con un nivel tecnológico medio-bajo. |
+| Navegación | Establecer una estructura de navegación coherente que permita acceder rápidamente a las diferentes secciones. |
+| Jerarquía visual | Organizar la información diferenciando claramente los elementos principales, secundarios y las acciones disponibles. |
+| Diseño responsive | Adaptar la interfaz a ordenadores, tablets y dispositivos móviles. |
+| Consistencia visual | Mantener un diseño uniforme mediante el uso coherente de colores, tipografías, botones, iconos y componentes. |
+| Feedback visual | Informar visualmente sobre acciones realizadas, errores, avisos y estados del stock. |
+| Accesibilidad | Facilitar la lectura y comprensión mediante un contraste adecuado, tamaños de texto apropiados y una distribución clara. |
+| Personalización | Adaptar las vistas y funcionalidades según el perfil y permisos de cada usuario. |
+| Identidad visual | Transmitir una imagen fiable, profesional y moderna mediante un sistema visual coherente. |
 
 ## 
 
 ## 1.5. Alcance del proyecto
 
-En esta primera fase (Sprint 1\) el alcance comprende el análisis inicial del público objetivo y de la competencia, y la conceptualización visual de la interfaz: mapa de navegación, teoría del color aplicada y elaboración de wireframes y mockups de alta fidelidad de las pantallas de login, registro y panel de control (dashboard). Queda fuera del alcance de este sprint la implementación funcional de la aplicación, que se abordará en sprints posteriores.
+El alcance global del proyecto comprende el análisis, diseño y desarrollo de **StockLink**, una aplicación web destinada a la gestión centralizada del stock de empresas con uno o varios locales.
+
+La solución permitirá gestionar productos, categorías, existencias y movimientos de inventario, así como consultar el estado del stock y recibir avisos cuando se alcancen los niveles mínimos establecidos.
+
+También se contempla la gestión de diferentes empresas y locales desde una misma sesión.
+
+Durante el **Sprint 1**, el trabajo se centra principalmente en el análisis del público objetivo, el estudio de soluciones existentes, la definición de requisitos iniciales y la conceptualización de la interfaz.
+
+Dentro de esta fase se incluyen el mapa de navegación, la definición de la identidad visual, la teoría del color, los wireframes y los mockups de alta fidelidad de las pantallas principales.
+
+La implementación funcional de la aplicación, incluyendo el desarrollo del frontend, backend, base de datos y funcionalidades de gestión de stock, se realizará en sprints posteriores.
+
+El proyecto se plantea con posibilidad de adaptación a empresas con diferentes cantidades de locales y productos, aunque durante la fase académica no se contempla realizar pruebas de funcionamiento a gran escala.
 
 ## 1.6. Limitaciones y exclusiones
 
-*FASE PENDIENTE*
+El desarrollo de StockLink está condicionado por el tiempo disponible, los recursos del equipo y el carácter académico del proyecto. Por este motivo, se establecen una serie de limitaciones y exclusiones para delimitar el alcance del proyecto.
+
+### Limitaciones
+
+* **Tiempo de desarrollo:** el proyecto debe realizarse dentro del periodo académico establecido, por lo que algunas funcionalidades avanzadas pueden quedar fuera de la versión inicial.
+
+* **Recursos disponibles:** el equipo trabaja principalmente con herramientas gratuitas y de código abierto, lo que limita determinadas opciones de infraestructura y servicios externos.
+
+* **Experiencia técnica:** el equipo se encuentra en proceso de aprendizaje de algunas de las tecnologías utilizadas, por lo que determinadas funcionalidades pueden requerir más tiempo de desarrollo o investigación.
+
+* **Escalabilidad real:** aunque la aplicación se diseña teniendo en cuenta la posibilidad de gestionar varias empresas y locales, no se realizarán pruebas con miles de usuarios o grandes volúmenes de datos.
+
+* **Despliegue:** durante el desarrollo se utilizará principalmente un entorno local, por lo que no se contempla una infraestructura empresarial de producción durante esta fase.
+
+* **Pruebas:** las pruebas se realizarán principalmente en un entorno académico y con un número limitado de usuarios, por lo que no representan necesariamente el comportamiento de la aplicación a gran escala.
+
+### Exclusiones
+
+* **Aplicaciones móviles nativas:** no se desarrollarán aplicaciones independientes para Android o iOS. La adaptación a dispositivos móviles se realizará mediante diseño responsive.
+
+* **Integración con hardware:** no se contempla inicialmente la conexión con lectores de códigos de barras, impresoras de etiquetas u otros dispositivos físicos.
+
+* **Integración con sistemas externos:** no se contempla la conexión con ERP, programas contables, sistemas de proveedores u otras plataformas empresariales.
+
+* **Gestión de ventas y facturación:** StockLink estará centrado en la gestión del inventario y no incluirá un sistema completo de ventas, facturación o gestión de clientes.
+
+* **Gestión de recursos humanos:** no se incluirán funcionalidades relacionadas con nóminas, contratos o gestión laboral.
+
+* **Inteligencia artificial:** no se contempla inicialmente el uso de inteligencia artificial para realizar predicciones de demanda o reposición automática.
+
+* **Pagos online:** la aplicación no incluirá sistemas de pago, suscripciones ni gestión de transacciones económicas.
+
+* **Internacionalización:** la primera versión estará orientada al mercado español y no contempla inicialmente la adaptación completa a otros idiomas, monedas o legislaciones.
 
 ## 1.7. Estructura de la memoria
 
@@ -154,20 +204,23 @@ La necesidad detectada es la falta de centralización y de visibilidad en tiempo
 
 ## 2.3. Estudio de soluciones existentes
 
-Se ha realizado un benchmarking sobre dos soluciones de referencia del mercado:
+Se ha realizado un benchmarking sobre diferentes soluciones de gestión de inventario con el objetivo de identificar funcionalidades de interés, buenas prácticas de diseño y posibles aspectos de mejora.
 
-| Referencia | Aspectos destacados | A tomar | Debilidad |
+| Referencia | Aspectos destacados | A tomar como referencia | Debilidad detectada |
 | :---- | :---- | :---- | :---- |
-| Zoho Inventory | Gestión multialmacén, alertas de stock bajo, órdenes de compra integradas. | Sistema de alertas y navegación multialmacén. | Diseño algo genérico. |
-| Holded (Inventario) | Control de stock en tiempo real entre almacenes, alarmas por umbral, informes de valor de inventario, modelo modular (básico/avanzado). | Escalado de funciones por módulos. | Informes e inventario algo básicos según usuarios. |
+| **Zoho Inventory** | Gestión multialmacén, alertas de stock bajo y órdenes de compra integradas. | Sistema de alertas y gestión de varios almacenes. | Interfaz con un nivel de complejidad elevado para usuarios con poca experiencia. |
+| **Holded** | Control de stock en tiempo real, gestión entre almacenes e informes. | Organización modular y gestión de información en tiempo real. | Orientación más amplia hacia la gestión empresarial, pudiendo resultar menos específica para el control sencillo de stock. |
+| **StockLink** | Gestión multiempresa desde una misma sesión e interfaz sencilla. | Navegación simple, centralización y facilidad de uso. | Proyecto en fase de desarrollo y orientado inicialmente a PYMEs. |
+
+El análisis realizado permite identificar funcionalidades que pueden resultar útiles para StockLink, pero también orientar el diseño hacia una experiencia más sencilla y accesible para el público objetivo.
 
 ## 2.4. Partes interesadas
 
 Se identifican tres grupos de partes interesadas directamente relacionadas con el uso de la interfaz:
 
-* Gerentes: interesados en la visión global del negocio y en la toma de decisiones.
-
-* Encargados: interesados en la consulta y actualización diaria del stock.
+* **Gerentes:** interesados en la visión global del negocio y en la toma de decisiones.
+* **Encargados:** interesados en la consulta y actualización diaria del stock.
+* **Personal operativo:** interesado en registrar entradas y salidas de productos de forma rápida y sencilla.
 
 ## 2.5. Estudio de viabilidad técnica
 
@@ -269,7 +322,11 @@ Esta planificación permite avanzar de forma progresiva, dedicando más tiempo a
 
 ## 3.6. Estimación de recursos
 
-El equipo está formado por 3 miembros, con una estimación de 200 horas de trabajo por persona durante el desarrollo (600 horas en total), que incluyen tareas de análisis, diseño, programación, pruebas, documentación y corrección de errores.
+El equipo está formado por 3 miembros, con una estimación de **200 horas de trabajo por persona**, lo que supone un total de **600 horas**.
+
+Estas horas incluyen tareas de análisis, planificación, diseño de interfaz, desarrollo frontend y backend, configuración de la base de datos, pruebas, documentación y corrección de errores.
+
+Para la estimación económica se establece un coste de referencia de **18 €/hora**, obteniendo un valor estimado del trabajo de **10.800 €**.
 
 ## 3.7. Presupuesto estimado
 
@@ -277,31 +334,60 @@ El equipo está formado por 3 miembros, con una estimación de 200 horas de trab
 
 El equipo de desarrollo está formado por 3 miembros. Se estima una dedicación aproximada de 200 horas por persona, incluyendo las tareas de análisis, planificación, diseño, desarrollo, pruebas, documentación y corrección de errores.
 
-Tomando como referencia un coste de 9 € por hora de trabajo, el coste estimado de los recursos humanos es:
+Tomando como referencia un coste de **18 € por hora de trabajo**, el valor estimado de los recursos humanos es:
 
 | Recurso | Horas | Coste/hora | Coste |
-| ----- | ----- | ----- | ----- |
-| Daniel JR | 200 h | 9 € | 1.800 € |
-| Pepe GC | 200 h | 9 € | 1.800 € |
-| Daniel O | 200 h | 9 € | 1.800 € |
-| Total | 600 h | 9 € | 5.400 € |
+| :---- | ----: | ----: | ----: |
+| Daniel JR | 200 h | 18 € | 3.600 € |
+| Pepe GC | 200 h | 18 € | 3.600 € |
+| Daniel O | 200 h | 18 € | 3.600 € |
+| **Total** | **600 h** | **18 €** | **10.800 €** |
 
-Por tanto, el valor estimado del trabajo realizado por el equipo es de 5.400 €. Esta cantidad representa el coste estimado de las horas de trabajo y no supone un gasto económico real para los integrantes, ya que se trata de un proyecto académico.
+Por tanto, el valor estimado del trabajo realizado por el equipo es de **10.800 €**.
+
+Esta cantidad representa el valor económico de las horas de trabajo necesarias para desarrollar el proyecto y no supone un gasto económico real para los integrantes, ya que se trata de un proyecto académico.
 
 ### Herramientas y licencias
 
-Para el desarrollo se han seleccionado principalmente herramientas gratuitas o de código abierto, evitando costes adicionales de licencias.
+Para el desarrollo se han seleccionado principalmente herramientas gratuitas o de código abierto:
 
-Entre las principales herramientas utilizadas se encuentran:
-
-* Visual Studio Code, como entorno de edición y desarrollo.  
-* Angular, para el desarrollo de la interfaz frontend.  
-* Node.js y Express, para el desarrollo del backend y la API.  
-* MySQL, para la gestión y almacenamiento de la base de datos.  
-* Git y GitHub, para el control de versiones y la colaboración entre los miembros del equipo.  
+* Visual Studio Code, como entorno de edición y desarrollo.
+* Angular, para el desarrollo de la interfaz frontend.
+* Node.js y Express, para el desarrollo del backend y la API.
+* MySQL, para la gestión y almacenamiento de la base de datos.
+* Git y GitHub, para el control de versiones y la colaboración entre los miembros del equipo.
 * Figma, para el diseño de las interfaces y elaboración de prototipos.
 
-El coste estimado de estas herramientas durante el desarrollo es de 0 €, utilizando las versiones gratuitas o de código abierto disponibles.
+El coste estimado de estas herramientas durante el desarrollo es de **0 €**, utilizando las versiones gratuitas o de código abierto disponibles.
+
+### Otros gastos
+
+También se han contemplado posibles gastos relacionados con el desarrollo y una futura puesta en producción:
+
+* **Pruebas con usuarios:** 0 €, realizadas con compañeros, profesores y usuarios cercanos.
+* **Imágenes e iconos:** 0 €, utilizando recursos gratuitos y librerías de iconos disponibles para uso permitido.
+* **Dominio:** 0 € durante la fase de desarrollo, ya que no es necesario publicar la aplicación en Internet.
+* **Alojamiento y servidor:** 0 € durante el desarrollo, utilizando un entorno local.
+* **Base de datos:** 0 €, utilizando MySQL en el entorno de desarrollo.
+
+En caso de realizar una futura puesta en producción, sería necesario contemplar costes adicionales de dominio, alojamiento, almacenamiento, copias de seguridad y mantenimiento.
+
+### Resumen de costes
+
+| Concepto | Coste estimado |
+| :---- | ----: |
+| Recursos humanos | **10.800 €** |
+| Herramientas y licencias | 0 € |
+| Pruebas de usuarios | 0 € |
+| Imágenes e iconos | 0 € |
+| Dominio durante el desarrollo | 0 € |
+| Alojamiento durante el desarrollo | 0 € |
+| **Coste directo real del desarrollo académico** | **0 €** |
+| **Valor estimado del proyecto** | **10.800 €** |
+
+En conclusión, el proyecto presenta un **coste directo real de 0 € durante su desarrollo académico**, debido al uso de herramientas y recursos gratuitos.
+
+Sin embargo, teniendo en cuenta las 600 horas estimadas de trabajo y un coste de referencia de 18 €/hora, el **valor económico estimado del desarrollo de StockLink es de 10.800 €**.
 
 ### Otros gastos
 
@@ -333,9 +419,11 @@ En conclusión, el coste económico directo del proyecto durante su desarrollo a
 
 ## 3.9. Herramientas de comunicación, coordinación y seguimiento
 
-Para facilitar la organización, comunicación y coordinación del equipo durante el desarrollo de StockLink, se utilizan principalmente GitHub y WhatsApp.
+Para facilitar la organización, comunicación y coordinación del equipo durante el desarrollo de StockLink, se utilizan principalmente **GitHub y WhatsApp**.
 
-El tablero Kanban de GitHub se utiliza para organizar y realizar el seguimiento de las tareas del proyecto. Las tareas se distribuyen según su estado, permitiendo conocer cuáles están pendientes, en proceso, en revisión o finalizadas. Además, se utiliza junto con el sistema de sprints, estableciendo las tareas que se deben realizar durante cada periodo de trabajo.
+El tablero Kanban de GitHub se utiliza para organizar y realizar el seguimiento de las tareas del proyecto. Las tareas se distribuyen según su estado, permitiendo conocer cuáles están pendientes, en proceso, en revisión o finalizadas.
+
+Además, el tablero se utiliza junto con el sistema de sprints, estableciendo las tareas que se deben realizar durante cada periodo de trabajo.
 
 Por otro lado, se utiliza un grupo de WhatsApp como medio de comunicación entre los miembros del equipo. A través de este grupo se pueden resolver dudas, avisar de cambios, coordinar el trabajo y mantener una comunicación rápida durante el desarrollo del proyecto.
 
@@ -395,11 +483,25 @@ Estas herramientas permiten centralizar la gestión de las tareas y mantener una
 
 # 5\. Diseño de la solución
 
-## 5\. Psicologia de colores
+# 5. Diseño de la solución
 
-Se ha optado por un diseño en modo oscuro con azul como color primario, ya que se trata de una interfaz orientada a un uso profesional y prolongado (dashboards de control). 
+## 5.1. Psicología del color
 
-El azul refuerza la percepción de fiabilidad y seriedad asociada a herramientas de gestión empresarial, mientras que la paleta de neutros (blancos y grises) garantiza la legibilidad y deja los colores semánticos (rojo, ámbar, verde) disponibles para comunicar el estado del inventario sin ambigüedad.
+Se ha optado por un diseño basado en una paleta oscura con azul como color primario, complementada con un tema claro alternativo.
+
+Esta elección responde tanto a criterios visuales como funcionales, buscando una interfaz profesional, clara y adecuada para un uso prolongado.
+
+El **azul** se utiliza como color principal porque transmite sensaciones asociadas a la fiabilidad, seguridad y profesionalidad. Además, permite destacar botones, acciones principales y elementos interactivos.
+
+Los **tonos oscuros y neutros** permiten crear una interfaz visualmente limpia y establecer una jerarquía clara entre fondos, superficies, textos y componentes.
+
+Los colores **verde, ámbar y rojo** se reservan para representar estados del inventario:
+
+* Verde: situación correcta o stock disponible.
+* Ámbar: situación de advertencia o stock bajo.
+* Rojo: situación crítica o falta de stock.
+
+De esta forma, el color adquiere una función informativa y permite interpretar rápidamente el estado del stock.
 
 ## 5.1. Visión general de la arquitectura
 
@@ -439,7 +541,13 @@ El azul refuerza la percepción de fiabilidad y seriedad asociada a herramientas
 
 ## 5.4. Diseño de la interfaz de usuario
 
-El diseño de la interfaz se ha desarrollado en Figma, elaborando primero wireframes de baja fidelidad y, a partir de ellos, mockups de alta fidelidad en modo oscuro y modo claro. Hasta el momento se han diseñado las pantallas de login, registro y panel de control (dashboard); queda pendiente para el siguiente sprint el resto de pantallas de la aplicación (productos, categorías, almacenes, movimientos y empresas).
+El diseño de la interfaz se ha desarrollado en Figma, elaborando primero wireframes de baja fidelidad y, a partir de ellos, mockups de alta fidelidad en modo oscuro y modo claro.
+
+Hasta el momento se han diseñado las pantallas de **login, registro y dashboard**, manteniendo una estructura visual coherente entre ambos temas.
+
+El resto de pantallas de la aplicación, como productos, categorías, almacenes, movimientos y empresas, se desarrollará en sprints posteriores.
+
+La interfaz se ha diseñado teniendo especialmente en cuenta la **claridad, usabilidad, navegación, jerarquía visual, diseño responsive, consistencia visual, accesibilidad y feedback al usuario**.
 
 ### 5.4.1. Principios de usabilidad y accesibilidad
 
