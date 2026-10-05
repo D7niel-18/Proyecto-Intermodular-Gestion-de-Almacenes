@@ -55,7 +55,7 @@ Prototipo (Alta Fidelidad y Dinámico — La Interacción) Es una simulación in
 
 **Figura 1\.** Wireframe de la pantalla de inicio de sesión.
 
-
+(Proyecto-Intermodular-Gestion-de-Almacenes/Sprints/Sprint%201%20Planificación%20y%20Prototipado/Wireframe%20-%20Mockup%20-%20Prototipo/wireframe.png)
 
 **Figura 2\.** Wireframe del dashboard.
 
