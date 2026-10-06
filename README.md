@@ -190,6 +190,19 @@ El desarrollo de StockLink está condicionado por el tiempo disponible, los recu
 
 ## 1.7. Estructura de la memoria
 
+La memoria comienza con una introducción en la que se presenta StockLink, su contexto y el problema relacionado con la gestión del stock que se pretende solucionar. En este primer capítulo también se define la propuesta de solución, los objetivos que se quieren alcanzar, el alcance del proyecto y las principales limitaciones y exclusiones que se han establecido.
+
+A continuación, se realiza un análisis del contexto y de la viabilidad del proyecto, estudiando el sector al que se dirige StockLink, los perfiles de usuarios y sus necesidades. También se analizan algunas soluciones existentes en el mercado para identificar sus principales características y tomar referencias para el diseño de nuestra propuesta. En este capítulo se incluyen además los estudios de viabilidad y un análisis inicial de los posibles riesgos del proyecto.
+
+Una vez definido el contexto, se explica la planificación y gestión del proyecto. En esta parte se describe la metodología de trabajo utilizada, basada en Kanban y organizada mediante sprints, así como la distribución de responsabilidades entre los integrantes del equipo. También se presentan la planificación temporal, los recursos necesarios, el presupuesto y las herramientas utilizadas para la comunicación y coordinación del equipo.
+
+Después se aborda el análisis de requisitos, donde se establecen las necesidades que deberá cubrir StockLink. Se identifican los diferentes perfiles de usuario y se comienzan a definir los requisitos funcionales y no funcionales que servirán como base para las siguientes fases del proyecto.
+
+Por último, se presenta el diseño inicial de la solución, donde se recogen las primeras decisiones relacionadas con la interfaz de usuario. En esta fase se trabaja la identidad visual de StockLink, la elección de colores y tipografías, los wireframes y los primeros mockups de las pantallas principales, como el inicio de sesión, el registro y el dashboard.
+
+De esta forma, el Sprint 1 permite pasar de la idea inicial del proyecto a una propuesta definida, estableciendo el problema, los objetivos, los usuarios, los requisitos iniciales y las bases del diseño que servirán para continuar con las siguientes fases del desarrollo de StockLink.
+
+
 # 2\. Análisis del contexto y viabilidad
 
 ## 2.1. Sector profesional y perfil de usuarios
