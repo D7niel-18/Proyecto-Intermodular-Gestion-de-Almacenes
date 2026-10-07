@@ -318,9 +318,3 @@ StockLink
         ├── Responsable de local
         └── Personal operativo
 ```
-
----
-## COEvaluación
-- Daniel Jiménez Ramírez - 100% de las tareas completadas en tiempo y forma.
-- Pepe Gil Cué - 100% de las tareas completadas en tiempo y forma.
-- Daniel Ortiz - 100% de las tareas completadas en tiempo y forma.

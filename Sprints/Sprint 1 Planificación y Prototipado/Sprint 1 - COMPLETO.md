@@ -165,9 +165,9 @@ Para realizar una estimación más próxima al valor de un desarrollo profesiona
 
 Somos 3 miembros en el equipo:
 
-* **Daniel JR:** 200 h × 18 €/h = **3.600 €**
-* **Pepe GC:** 200 h × 18 €/h = **3.600 €**
-* **Daniel O:** 200 h × 18 €/h = **3.600 €**
+* **Daniel JR:** 225 hr × 18 €/h = **4.050 €**
+* **Pepe GC:** 190 hr × 18 €/h = **3.420 €**
+* **Daniel O:** 185 hr × 18 €/h = **3.330 €**
 
 Por tanto:
 
@@ -218,11 +218,8 @@ Los costes de dominio, alojamiento y almacenamiento son **orientativos** y no se
 | **Valor estimado del desarrollo**                       | **10.800 €** |
 | **Coste estimado de puesta en producción (primer año)** | **11.235 €** |
 
-
-# Duración y entrega
-
-* **Entrega y presentación:** 06/10/2025.  
-* **Presentación**: 10 minutos  
-* **Formato de entrega:** En un repositorio de Github  
-  * README  
-  * Presentación en diapositivas, Google Slides.
+---
+## COEvaluación
+- Daniel Jiménez Ramírez - 100% de las tareas completadas en tiempo y forma.
+- Pepe Gil Cué - 100% de las tareas completadas en tiempo y forma.
+- Daniel Ortiz - 100% de las tareas completadas en tiempo y forma.
