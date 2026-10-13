@@ -12,14 +12,24 @@ El análisis del público objetivo se ha realizado teniendo en cuenta que la apl
 
 - **Personal operativo:** realiza tareas puntuales (recuento, entrada de pedidos) bajo supervisión, con acceso limitado a lo esencial. Requiere procesos visuales, con el mínimo de pasos posible, desde dispositivos móviles.
 
-### Objetivos principales de la interfaz
+## Objetivos principales de la interfaz
 
-- **Centralizar el stock** de varias empresas/locales en una sola sesión, con navegación clara entre ellos.
-- **Visibilidad en tiempo real** (existencias, alertas de stock bajo).
-- **Minimizar clics** para registrar movimientos de stock.
-- **Escalar bien** tanto para 1 local como para 10.
-- **Jerarquía visual clara y color funcional** (alertas, estados).
-- **Transmitir fiabilidad y profesionalidad.**
+Los principales objetivos de la interfaz se han definido teniendo en cuenta las necesidades de una aplicación destinada a la **gestión de stock de diferentes empresas y locales**. Se busca que el usuario pueda consultar y gestionar la información de forma rápida, clara y eficiente.
+
+* **Centralizar la gestión del stock:** permitir gestionar el inventario de varias empresas o locales desde una misma sesión, facilitando la navegación y el cambio entre ellos.
+
+* **Ofrecer visibilidad en tiempo real:** mostrar de forma clara las existencias disponibles y las alertas relacionadas con niveles bajos de stock, permitiendo detectar rápidamente posibles problemas.
+
+* **Minimizar los clics y pasos necesarios:** simplificar las operaciones habituales, especialmente el registro de entradas y salidas de stock, para hacer la gestión más rápida y eficiente.
+
+* **Garantizar la escalabilidad de la interfaz:** diseñar la aplicación para que pueda funcionar correctamente tanto en la gestión de un único local como en escenarios con múltiples locales, sin aumentar innecesariamente la complejidad de uso.
+
+* **Establecer una jerarquía visual clara:** organizar la información según su importancia y utilizar el color de forma funcional, especialmente para representar alertas, estados y niveles de stock.
+
+* **Transmitir fiabilidad y profesionalidad:** crear una interfaz consistente, limpia y cuidada que genere confianza en el usuario y sea adecuada para un entorno de gestión empresarial.
+
+En conjunto, estos objetivos buscan que la interfaz permita **gestionar grandes cantidades de información de forma sencilla**, reduciendo el tiempo necesario para realizar las tareas habituales y facilitando la toma de decisiones relacionadas con el stock.
+
 
 ### Benchmarking: referencias de sitios similares
 
