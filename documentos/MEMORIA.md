@@ -207,31 +207,19 @@ De esta forma, el Sprint 1 permite pasar de la idea inicial del proyecto a una p
 
 ## 2.1. Sector profesional y perfil de usuarios
 
-El público objetivo se compone principalmente de PYMEs con uno o varios locales (retail, hostelería, farmacias, almacenes) que gestionan hoy su stock en Excel, en papel o de memoria, así como de multiempresas o franquicias pequeñas-medianas que necesitan ver todos sus locales desde una misma sesión. Dentro de cada organización se identifican tres perfiles de usuario final: gerentes (visión global y toma de decisiones), encargados de local (consulta y actualización diaria) y personal operativo (registro de entradas y salidas). En conjunto, se trata de un público con un nivel tecnológico medio-bajo, por lo que la interfaz debe ser simple, sin curva de aprendizaje y usable en dispositivos móviles y tablets.
+*FASE PENDIENTE*
 
 ## 2.2. Análisis de la necesidad
 
-La necesidad detectada es la falta de centralización y de visibilidad en tiempo real del stock cuando una empresa gestiona más de un local. Esto se traduce en varios requisitos de alto nivel para la interfaz: centralizar el stock de varias empresas y locales en una sola sesión con una navegación clara entre ellos; ofrecer visibilidad en tiempo real de las existencias y alertas de stock bajo; minimizar el número de clics necesarios para registrar un movimiento de stock; escalar correctamente tanto para un único local como para diez; mantener una jerarquía visual clara con un uso funcional del color para alertas y estados; y transmitir fiabilidad y profesionalidad en toda la interfaz.
+*FASE PENDIENTE*
 
 ## 2.3. Estudio de soluciones existentes
 
-Se ha realizado un benchmarking sobre diferentes soluciones de gestión de inventario con el objetivo de identificar funcionalidades de interés, buenas prácticas de diseño y posibles aspectos de mejora.
-
-| Referencia | Aspectos destacados | A tomar como referencia | Debilidad detectada |
-| :---- | :---- | :---- | :---- |
-| **Zoho Inventory** | Gestión multialmacén, alertas de stock bajo y órdenes de compra integradas. | Sistema de alertas y gestión de varios almacenes. | Interfaz con un nivel de complejidad elevado para usuarios con poca experiencia. |
-| **Holded** | Control de stock en tiempo real, gestión entre almacenes e informes. | Organización modular y gestión de información en tiempo real. | Orientación más amplia hacia la gestión empresarial, pudiendo resultar menos específica para el control sencillo de stock. |
-| **StockLink** | Gestión multiempresa desde una misma sesión e interfaz sencilla. | Navegación simple, centralización y facilidad de uso. | Proyecto en fase de desarrollo y orientado inicialmente a PYMEs. |
-
-El análisis realizado permite identificar funcionalidades que pueden resultar útiles para StockLink, pero también orientar el diseño hacia una experiencia más sencilla y accesible para el público objetivo.
+*FASE PENDIENTE*
 
 ## 2.4. Partes interesadas
 
-Se identifican tres grupos de partes interesadas directamente relacionadas con el uso de la interfaz:
-
-* **Gerentes:** interesados en la visión global del negocio y en la toma de decisiones.
-* **Encargados:** interesados en la consulta y actualización diaria del stock.
-* **Personal operativo:** interesado en registrar entradas y salidas de productos de forma rápida y sencilla.
+*FASE PENDIENTE*
 
 ## 2.5. Estudio de viabilidad técnica
 
@@ -239,11 +227,7 @@ Se identifican tres grupos de partes interesadas directamente relacionadas con e
 
 ## 2.6. Estudio de viabilidad económica
 
-La viabilidad económica del proyecto en esta fase se apoya en el uso de herramientas gratuitas o de código abierto, lo que reduce a cero el coste de licencias.
-
-## Estimación de costes
-
-Para realizar una estimación económica del proyecto se han tenido en cuenta los principales recursos necesarios para su desarrollo: recursos humanos, herramientas y licencias, y otros gastos asociados al proyecto.
+*FASE PENDIENTE*
 
 2.7. Estudio de viabilidad legal y normativa
 
@@ -261,168 +245,35 @@ Para realizar una estimación económica del proyecto se han tenido en cuenta lo
 
 ## 2.8. Análisis de riesgos inicial
 
-Durante la planificación del proyecto se han identificado diferentes riesgos que podrían afectar al desarrollo de StockLink. Para cada riesgo se ha valorado su probabilidad, su impacto sobre el proyecto y las medidas que se pueden aplicar para reducir sus consecuencias.
-
-| Riesgo | Probabilidad | Impacto | Medidas de mitigación |
-| ----- | ----- | ----- | ----- |
-| Falta de tiempo para completar todas las funcionalidades | Media | Alto | Establecer prioridades, dividir el trabajo en tareas y realizar un seguimiento periódico del progreso. |
-| Cambios en los requisitos durante el desarrollo | Media | Medio | Definir los requisitos principales al inicio y documentar cualquier cambio antes de implementarlo. |
-| Problemas técnicos con Angular, Node.js, Express o MySQL | Media | Alto | Investigar previamente las tecnologías, realizar pruebas pequeñas y documentar las soluciones encontradas. |
-| Errores o pérdida de información en la base de datos | Baja | Alto | Realizar copias de seguridad y probar las operaciones de inserción, modificación y eliminación antes de incorporarlas al sistema final. |
-| Problemas de integración entre frontend y backend | Media | Alto | Definir correctamente la API y probar cada endpoint de forma independiente antes de integrarlo con el frontend. |
-| Conflictos entre los miembros del equipo al trabajar con el código | Media | Medio | Utilizar Git y GitHub, establecer una organización de ramas y repartir claramente las tareas. |
-| Dificultades para conseguir una interfaz sencilla e intuitiva | Media | Medio | Realizar wireframes y prototipos antes del desarrollo y realizar pruebas de usabilidad durante el proyecto. |
-| Problemas de rendimiento al gestionar varios locales o grandes cantidades de productos | Baja | Medio | Diseñar la estructura de la aplicación pensando en la escalabilidad y realizar pruebas con diferentes cantidades de datos. |
-| Falta de conocimientos sobre alguna tecnología | Media | Medio | Consultar documentación oficial, realizar pequeñas pruebas y distribuir las tareas según los conocimientos de cada integrante. |
-| Aparición de errores durante las pruebas finales | Media | Medio | Realizar pruebas de forma progresiva durante todo el desarrollo y reservar tiempo para correcciones antes de la entrega. |
-
-### Conclusión
-
-El análisis inicial permite identificar los principales factores que podrían afectar al desarrollo de StockLink. Los riesgos relacionados con el **tiempo, la integración entre tecnologías y los problemas técnicos** tendrán especial seguimiento durante el proyecto.
-
-La utilización de una planificación por tareas, el control de versiones mediante Git y las pruebas realizadas durante las diferentes fases permitirán reducir la probabilidad de que estos riesgos afectan significativamente al resultado final.
+*FASE PENDIENTE*
 
 # 3\. Planificación y gestión del proyecto
 
 ## 3.1. Metodología de desarrollo empleada
 
-Para el desarrollo de StockLink se ha utilizado una metodología basada en Kanban, adaptada al trabajo mediante sprints. Esta metodología permite organizar y visualizar las tareas del proyecto, facilitando la distribución del trabajo entre los miembros del equipo y el seguimiento del progreso.
-
-Para ello, se utiliza un tablero Kanban en el que las tareas se organizan según su estado de desarrollo, por ejemplo: Pendiente, En proceso, En revisión y Finalizado. De esta forma, todos los miembros del equipo pueden conocer en todo momento qué tareas están pendientes, cuáles se están realizando y cuáles ya han sido completadas.
-
-El trabajo se divide en sprints, estableciendo en cada uno un conjunto de tareas y objetivos que deben abordarse durante ese periodo. Al finalizar cada sprint se revisa el trabajo realizado, se comprueba el estado de las tareas y se planifican las siguientes actividades.
-
-La metodología permite mantener una organización flexible, ya que las tareas pueden priorizarse y reorganizarse según las necesidades del proyecto. Además, facilita la colaboración entre los miembros del equipo y permite detectar con mayor rapidez posibles retrasos, problemas técnicos o tareas que necesiten revisión.
-
-En resumen, la combinación de Kanban y sprints permite mantener una visión clara del estado del proyecto, distribuir el trabajo de forma organizada y realizar un seguimiento continuo del desarrollo de StockLink.
+*FASE PENDIENTE*
 
 3.2. Organización del equipo y reparto de responsabilidades
 
-Daniel Jiménez Ramírez → Scrum Master, DevOps
-
-Pepe Gil Cué → SecOps
-
-Daniel Ortiz → SysAdmin
+*FASE PENDIENTE*
 
 ## 3.3. Roles del proyecto
 
 ## 3.4. Plan de trabajo
 
-El proyecto se ha organizado en un plan detallado de creación de la interfaz compuesto por cuatro bloques de trabajo: análisis inicial del público objetivo, objetivos y competencia; plan de diseño de la interfaz, incluyendo la definición de requerimientos funcionales y estéticos y la elaboración de wireframes, mockups y un prototipo inicial; cronograma de ejecución del proyecto; y presupuesto básico de recursos.
+*FASE PENDIENTE*
 
 ## 3.5. Cronograma e hitos
 
-El proyecto se ha planificado en cuatro fases secuenciales, distribuidas a lo largo de cinco semanas. Se ha reservado un tiempo mayor del estrictamente necesario para poder ejecutar correcciones o mejoras en caso de detectarse errores.
-
-| Fase | S1 | S2 | S3 | S4 | S5 |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| Análisis | ███ |  |  |  |  |
-| Diseño |  | ███ | ███ |  |  |
-| Validación |  |  |  | ███ |  |
-| Ajustes |  |  |  |  | ███ |
-
-En la fase de análisis (1 semana) se sitúa el contenido, la planificación y la finalidad del proyecto, y se recopilan los requisitos del sistema de gestión de stock multiempresa: qué información necesita gestionar cada empresa, qué usuarios interactuarán con el sistema y qué funcionalidades mínimas deben existir.
-
-En la fase de diseño (2 semanas) se define la arquitectura de la aplicación y el modelo de datos (tablas de empresas, productos, inventario y movimientos de stock), se diseña la interfaz de usuario y se planifican las funcionalidades.
-
-En la fase de validación (1 semana) se comprueba que el sistema diseñado responde a los requisitos definidos en la fase de análisis, mediante pruebas con datos de ejemplo, revisión con el tutor y detección de posibles carencias o errores.
-
-En la fase de ajustes (1 semana) se corrigen las incidencias detectadas durante la validación y se refina el sistema antes de la entrega final.
-
-Esta planificación permite avanzar de forma progresiva, dedicando más tiempo a la fase de diseño por ser la más determinante para el correcto funcionamiento del sistema.
+*FASE PENDIENTE*
 
 ## 3.6. Estimación de recursos
 
-El equipo está formado por 3 miembros, con una estimación de **200 horas de trabajo por persona**, lo que supone un total de **600 horas**.
-
-Estas horas incluyen tareas de análisis, planificación, diseño de interfaz, desarrollo frontend y backend, configuración de la base de datos, pruebas, documentación y corrección de errores.
-
-Para la estimación económica se establece un coste de referencia de **18 €/hora**, obteniendo un valor estimado del trabajo de **10.800 €**.
+*FASE PENDIENTE*
 
 ## 3.7. Presupuesto estimado
 
-### Recursos humanos
-
-El equipo de desarrollo está formado por 3 miembros. Se estima una dedicación aproximada de 200 horas por persona, incluyendo las tareas de análisis, planificación, diseño, desarrollo, pruebas, documentación y corrección de errores.
-
-Tomando como referencia un coste de **18 € por hora de trabajo**, el valor estimado de los recursos humanos es:
-
-| Recurso | Horas | Coste/hora | Coste |
-| :---- | ----: | ----: | ----: |
-| Daniel JR | 200 h | 18 € | 3.600 € |
-| Pepe GC | 200 h | 18 € | 3.600 € |
-| Daniel O | 200 h | 18 € | 3.600 € |
-| **Total** | **600 h** | **18 €** | **10.800 €** |
-
-Por tanto, el valor estimado del trabajo realizado por el equipo es de **10.800 €**.
-
-Esta cantidad representa el valor económico de las horas de trabajo necesarias para desarrollar el proyecto y no supone un gasto económico real para los integrantes, ya que se trata de un proyecto académico.
-
-### Herramientas y licencias
-
-Para el desarrollo se han seleccionado principalmente herramientas gratuitas o de código abierto:
-
-* Visual Studio Code, como entorno de edición y desarrollo.
-* Angular, para el desarrollo de la interfaz frontend.
-* Node.js y Express, para el desarrollo del backend y la API.
-* MySQL, para la gestión y almacenamiento de la base de datos.
-* Git y GitHub, para el control de versiones y la colaboración entre los miembros del equipo.
-* Figma, para el diseño de las interfaces y elaboración de prototipos.
-
-El coste estimado de estas herramientas durante el desarrollo es de **0 €**, utilizando las versiones gratuitas o de código abierto disponibles.
-
-### Otros gastos
-
-También se han contemplado posibles gastos relacionados con el desarrollo y una futura puesta en producción:
-
-* **Pruebas con usuarios:** 0 €, realizadas con compañeros, profesores y usuarios cercanos.
-* **Imágenes e iconos:** 0 €, utilizando recursos gratuitos y librerías de iconos disponibles para uso permitido.
-* **Dominio:** 0 € durante la fase de desarrollo, ya que no es necesario publicar la aplicación en Internet.
-* **Alojamiento y servidor:** 0 € durante el desarrollo, utilizando un entorno local.
-* **Base de datos:** 0 €, utilizando MySQL en el entorno de desarrollo.
-
-En caso de realizar una futura puesta en producción, sería necesario contemplar costes adicionales de dominio, alojamiento, almacenamiento, copias de seguridad y mantenimiento.
-
-### Resumen de costes
-
-| Concepto | Coste estimado |
-| :---- | ----: |
-| Recursos humanos | **10.800 €** |
-| Herramientas y licencias | 0 € |
-| Pruebas de usuarios | 0 € |
-| Imágenes e iconos | 0 € |
-| Dominio durante el desarrollo | 0 € |
-| Alojamiento durante el desarrollo | 0 € |
-| **Coste directo real del desarrollo académico** | **0 €** |
-| **Valor estimado del proyecto** | **10.800 €** |
-
-En conclusión, el proyecto presenta un **coste directo real de 0 € durante su desarrollo académico**, debido al uso de herramientas y recursos gratuitos.
-
-Sin embargo, teniendo en cuenta las 600 horas estimadas de trabajo y un coste de referencia de 18 €/hora, el **valor económico estimado del desarrollo de StockLink es de 10.800 €**.
-
-### Otros gastos
-
-También se han contemplado otros posibles gastos relacionados con el desarrollo del proyecto:
-
-* Pruebas de usuarios: 0 €, ya que se realizarán con compañeros, profesores y usuarios cercanos al equipo.  
-* Imágenes e iconos: 0 €, utilizando recursos gratuitos y librerías de iconos disponibles para uso en el proyecto.  
-* Dominio: 0 € durante la fase de desarrollo, ya que no es necesario publicar la aplicación en Internet.  
-* Alojamiento y servidor: 0 € durante el desarrollo, utilizando un entorno local para ejecutar la aplicación.  
-* Base de datos: 0 €, utilizando MySQL en el entorno de desarrollo.
-
-### Resumen de costes
-
-| Concepto | Coste estimado |
-| ----- | ----- |
-| Recursos humanos | 5.400 € |
-| Herramientas y licencias | 0 € |
-| Pruebas de usuarios | 0 € |
-| Imágenes e iconos | 0 € |
-| Dominio | 0 € |
-| Alojamiento y servidor | 0 € |
-| Coste total estimado | 5.400 € |
-
-En conclusión, el coste económico directo del proyecto durante su desarrollo académico es de 0 €, ya que se utilizan herramientas y recursos gratuitos. Sin embargo, teniendo en cuenta el valor estimado de las horas de trabajo de los tres integrantes del equipo, el coste total estimado del desarrollo asciende a 5.400 €.
+*FASE PENDIENTE*
 
 ## 3.8. Gestión de riesgos
 
@@ -430,15 +281,7 @@ En conclusión, el coste económico directo del proyecto durante su desarrollo a
 
 ## 3.9. Herramientas de comunicación, coordinación y seguimiento
 
-Para facilitar la organización, comunicación y coordinación del equipo durante el desarrollo de StockLink, se utilizan principalmente **GitHub y WhatsApp**.
-
-El tablero Kanban de GitHub se utiliza para organizar y realizar el seguimiento de las tareas del proyecto. Las tareas se distribuyen según su estado, permitiendo conocer cuáles están pendientes, en proceso, en revisión o finalizadas.
-
-Además, el tablero se utiliza junto con el sistema de sprints, estableciendo las tareas que se deben realizar durante cada periodo de trabajo.
-
-Por otro lado, se utiliza un grupo de WhatsApp como medio de comunicación entre los miembros del equipo. A través de este grupo se pueden resolver dudas, avisar de cambios, coordinar el trabajo y mantener una comunicación rápida durante el desarrollo del proyecto.
-
-Estas herramientas permiten centralizar la gestión de las tareas y mantener una comunicación constante entre los integrantes del equipo, facilitando el seguimiento del proyecto y la coordinación de las actividades.
+*FASE PENDIENTE*
 
 ## 3.10. Gestión de versiones y repositorio de código
 
@@ -448,31 +291,13 @@ Estas herramientas permiten centralizar la gestión de las tareas y mantener una
 
 ## 4.1. Identificación de usuarios y perfiles
 
-* Administrador de empresa: gestiona productos, categorías y usuarios de su empresa
-
-* Empleado/operario: consulta y actualiza el stock
-
 *FASE PENDIENTE* 
 
 ## 4.2. Requisitos funcionales
 
-* RF-01: El sistema permitirá registrar una empresa y sus usuarios
-
-* RF-02: El usuario podrá dar de alta, editar y eliminar productos
-
-* RF-03: El sistema mostrará el stock actual de cada producto
-
-* RF-04: El sistema generará una alerta cuando el stock baje del mínimo configurado
-
-* RF-05: El usuario podrá registrar entradas y salidas de stock
-
 *FASE PENDIENTE* 
 
 ## 4.3. Requisitos no funcionales
-
-* RNF-01: La interfaz será responsive (escritorio y móvil)
-
-* RNF-02: Los datos de cada empresa estarán aislados de las demás
 
 *FASE PENDIENTE* 
 
@@ -496,23 +321,11 @@ Estas herramientas permiten centralizar la gestión de las tareas y mantener una
 
 # 5. Diseño de la solución
 
+*FASE PENDIENTE*
+
 ## 5.1. Psicología del color
 
-Se ha optado por un diseño basado en una paleta oscura con azul como color primario, complementada con un tema claro alternativo.
-
-Esta elección responde tanto a criterios visuales como funcionales, buscando una interfaz profesional, clara y adecuada para un uso prolongado.
-
-El **azul** se utiliza como color principal porque transmite sensaciones asociadas a la fiabilidad, seguridad y profesionalidad. Además, permite destacar botones, acciones principales y elementos interactivos.
-
-Los **tonos oscuros y neutros** permiten crear una interfaz visualmente limpia y establecer una jerarquía clara entre fondos, superficies, textos y componentes.
-
-Los colores **verde, ámbar y rojo** se reservan para representar estados del inventario:
-
-* Verde: situación correcta o stock disponible.
-* Ámbar: situación de advertencia o stock bajo.
-* Rojo: situación crítica o falta de stock.
-
-De esta forma, el color adquiere una función informativa y permite interpretar rápidamente el estado del stock.
+*FASE PENDIENTE*
 
 ## 5.1. Visión general de la arquitectura
 
@@ -552,13 +365,7 @@ De esta forma, el color adquiere una función informativa y permite interpretar 
 
 ## 5.4. Diseño de la interfaz de usuario
 
-El diseño de la interfaz se ha desarrollado en Figma, elaborando primero wireframes de baja fidelidad y, a partir de ellos, mockups de alta fidelidad en modo oscuro y modo claro.
-
-Hasta el momento se han diseñado las pantallas de **login, registro y dashboard**, manteniendo una estructura visual coherente entre ambos temas.
-
-El resto de pantallas de la aplicación, como productos, categorías, almacenes, movimientos y empresas, se desarrollará en sprints posteriores.
-
-La interfaz se ha diseñado teniendo especialmente en cuenta la **claridad, usabilidad, navegación, jerarquía visual, diseño responsive, consistencia visual, accesibilidad y feedback al usuario**.
+*FASE PENDIENTE*
 
 ### 5.4.1. Principios de usabilidad y accesibilidad
 
@@ -570,65 +377,11 @@ La interfaz se ha diseñado teniendo especialmente en cuenta la **claridad, usab
 
 ### 5.4.3. Wireframes o prototipos
 
-Wireframe de Login y Registro: pantalla dividida en dos zonas. A la izquierda, la presentación de StockLink ("Gestión de inventario para empresas modernas") con una imagen ilustrativa y un breve texto sobre los servicios. A la derecha, el formulario de "Crear cuenta" con los campos Nombre, Email, Empresa y Contraseña, y el botón de creación de cuenta.
-
-Wireframe del Dashboard: estructura de panel de control con una barra lateral izquierda que incluye el listado de empresas del usuario (Empresa 1 a Empresa 6, etc.), un bloque de navegación (Dashboard, Productos, Categorías, Almacenes, Movimientos, Empresas) y el nombre de usuario en la parte inferior. La zona principal derecha muestra el "Panel de control" con indicadores superiores, un bloque de "Stock", un bloque de "Últimos movimientos" y un bloque de "Capacidad almacén".
-
-A partir de estos wireframes se ha construido un prototipo inicial usando HTML semántico, CSS y JavaScript básico, y mockups de alta fidelidad tanto en modo oscuro como en modo claro para las pantallas de login/registro y para el dashboard, este último ya con datos de ejemplo (empresa TechParts S.L., referencias activas, unidades totales, valor en stock, alertas críticas, alertas de stock por producto, últimos movimientos y capacidad por almacén).
+*FASE PENDIENTE*
 
 ### 5.4.4. Diseño visual final
 
-Decisión de diseño: tema oscuro con azul como color primario. La aplicación se ha diseñado con dos temas visuales, oscuro y claro, que permiten al usuario alternar entre ambos según sus preferencias. Los dos modos mantienen la misma estructura, componentes y funcionalidades, modificando únicamente la apariencia visual, con el objetivo de mejorar la comodidad, la accesibilidad y la personalización de la aplicación.
-
-### Tema oscuro
-
-Pensado especialmente para un uso prolongado de la aplicación, como el que se produce al consultar y gestionar información desde el dashboard. Paleta de colores:
-
-| Color | Uso | Descripción |
-| :---- | :---- | :---- |
-| \#2F91F9 | Azul principal | Utilizado en botones, elementos interactivos y acciones importantes; color de acento para destacar los elementos con los que el usuario puede interactuar. |
-| \#151A21 | Fondo izquierdo | Fondo principal de la zona izquierda de la interfaz. |
-| \#0D1117 | Fondo derecho | Zona principal de contenido; crea separación visual entre las áreas de la aplicación. |
-| \#1B2129 | Superficies e inputs | Tarjetas, campos de entrada y otros componentes que necesitan diferenciarse del fondo. |
-| \#E5E7EB | Texto principal | Títulos y contenido de mayor importancia; contraste adecuado sobre fondos oscuros. |
-| \#7A8491 | Texto secundario | Descripciones, información auxiliar y metadatos; jerarquía visual respecto al texto principal. |
-| \#252C35 | Bordes sutiles | Bordes y separadores para delimitar componentes sin generar contraste excesivo. |
-
-El resultado es una interfaz oscura con contrastes controlados y una jerarquía visual clara, utilizando el azul como elemento de acento para dirigir la atención hacia las acciones principales.
-
-### Tema claro
-
-Como alternativa al tema oscuro, manteniendo la misma estructura y funcionalidad de la aplicación, de forma que el usuario puede cambiar entre ambos modos sin que cambie la organización de la interfaz. Paleta de colores:
-
-| Color | Uso | Descripción |
-| :---- | :---- | :---- |
-| \#111827 | Texto principal y botones | Elementos de mayor importancia y acciones principales. |
-| \#6B7280 | Texto secundario | Descripciones y contenido de menor jerarquía. |
-| \#9CA3AF | Texto auxiliar | Información complementaria y textos de ayuda (placeholders). |
-| \#D1D5DB | Bordes | Separación y delimitación de componentes de la interfaz. |
-| \#F3F4F6 | Fondo general | Base de la aplicación. |
-| \#F9FAFB | Superficies suaves | Zonas con separación visual ligera. |
-| \#FFFFFF | Tarjetas y campos | Tarjetas, formularios e inputs, diferenciados del fondo general. |
-
-La combinación de estos colores permite mantener una interfaz limpia, sencilla y fácil de leer, utilizando distintas tonalidades para establecer una jerarquía clara entre la información.
-
-### Colores semánticos
-
-Independientemente del tema seleccionado, los colores rojo, ámbar y verde se reservan para representar los distintos estados del stock, y no se utilizan de forma general en la interfaz para mantener su significado y evitar confusiones:
-
-* Verde: estado correcto o stock disponible.
-
-* Ámbar: situación de advertencia o stock bajo.
-
-* Rojo: situación crítica o falta de stock.
-
-### Tipografía
-
-Se ha utilizado Work Sans como fuente principal por
-
- su buena legibilidad y apariencia limpia, especialmente adecuada para interfaces digitales. Para la marca, la versión de la aplicación y determinados textos técnicos se utiliza JetBrains Mono, una tipografía monoespaciada que diferencia estos elementos del contenido general y aporta una estética más técnica.
-
-En conjunto, ambos temas mantienen una identidad visual común, compartiendo estructura, tipografía, componentes y criterios de jerarquía. La posibilidad de alternar entre modo oscuro y claro permite personalizar la experiencia sin afectar a la funcionalidad ni a la organización de la aplicación.
+*FASE PENDIENTE*
 
 ## 5.5. Diseño de seguridad
 
