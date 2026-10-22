@@ -1,3 +1,4 @@
+# Sprint 1 - Alcance del Proyecto
 ## 1.5 Alcance del Proyecto
 - Desarrollo técnico: Comprende el análisis, diseño e implementación funcional de StockLink para la gestión de productos, categorías, existencias, movimientos y alertas de stock.
 - Gestión unificada: Inclusión del módulo multiempresa y multilocal accesible en una sola sesión.   
