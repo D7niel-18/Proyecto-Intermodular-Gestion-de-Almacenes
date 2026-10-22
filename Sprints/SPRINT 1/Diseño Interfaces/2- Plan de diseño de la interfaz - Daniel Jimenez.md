@@ -1,7 +1,7 @@
 # Sprint 1 - Plan de diseño de la interfaz
 
 
-2. **Plan de diseño de la interfaz**  
+1.2 **Plan de diseño de la interfaz**  
    * Definición de requerimientos funcionales y estéticos.  
    * Elaboración de **bocetos (wireframes)** de la página de inicio y una sección interior (puede hacerse en papel o en herramientas como Figma, Canva, Balsamiq…).  
      En nuestro caso hemos usado FIGMA para la realización de los Wireframe y Mockup hemos hecho una página de login y registro de la web, nos faltaria hacer el dashboard.
