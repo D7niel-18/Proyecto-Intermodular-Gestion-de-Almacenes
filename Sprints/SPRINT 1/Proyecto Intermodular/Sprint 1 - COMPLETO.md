@@ -53,3 +53,24 @@ Objetivos específicos.
 - Gestión unificada: Inclusión del módulo multiempresa y multilocal accesible en una sola sesión.   
 - Proyección: Planteado como una solución de implantación a nivel nacional adaptable a diversas PYMEs y escalable según el volumen de datos.   
 - Verificación: Incluye las pruebas necesarias para validar el funcionamiento y cumplimiento de los requisitos establecidos
+
+## 1.6 Limitaciones y exclusiones
+
+Limitaciones
+- Tiempo de desarrollo: Delimitado estrictamente al marco temporal establecido para el proyecto intermodular.   
+- Recursos: Uso preferente de herramientas y servicios gratuitos, condicionando la infraestructura de despliegue.   
+- Experiencia técnica: Desarrollo llevado a cabo por un equipo en fase de aprendizaje de las tecnologías utilizadas.   
+- Escalabilidad real: La solución se diseña para ser escalable, pero no contempla pruebas masivas con miles de usuarios reales.  
+- Despliegue: Orientado a un entorno de desarrollo y pruebas, sin despliegue comercial en producción.   
+- Pruebas: Limitadas al ámbito académico con un grupo reducidos de usuarios.   
+
+Exclusiones
+- Aplicación móvil nativa: No se desarrollarán apps para Android ni iOS (se cubre mediante diseño web responsive).   
+- Hardware externo: Sin integración con lectores de código de barras, impresoras de etiquetas o TPVs.   
+- Sistemas externos: Sin conexión con ERPs, software contable o plataformas de proveedores.   
+- Módulos comerciales: Se excluye la gestión de ventas, facturación, pedidos y clientes.   
+- Recursos Humanos: Sin funcionalidades relativas a nóminas, contratos o gestión de personal.   
+- Inteligencia Artificial: Sin modelos predictivos automáticos de demanda o reposición.   
+- Pasarela de pagos: Sin procesamiento de pagos online ni cobro de suscripciones.   
+- Internacionalización: Centrado únicamente en el mercado español (un idioma, moneda y legislación).   
+- Soporte post-entrega: Sin servicio de mantenimiento o soporte técnico empresarial continuo tras finalizar la fase académica. 
