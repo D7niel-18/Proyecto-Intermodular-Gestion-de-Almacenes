@@ -16,3 +16,16 @@ Los distintos perfiles de usuario implicados son:
 * Encargados de local: consultan y actualizan el stock diariamente.
 * Personal operativo: registra entradas y salidas de productos.
 
+## 1.3. Propuesta de Solución
+
+Aplicación web centralizada: Desarrollo de un sistema donde cada empresa pueda dar de alta productos, organizarlos en categorías, actualizar existencias y configurar alertas automáticas al alcanzar un umbral mínimo de stock.
+Acceso multiempresa unificado: Posibilidad de cambiar entre distintas empresas o locales gestionados desde una misma sesión, sin necesidad de cerrar sesión ni crear cuentas independientes.
+Usabilidad y adaptabilidad: Diseñada para usuarios con nivel tecnológico medio-bajo, sin curva de aprendizaje, ejecutable en dispositivos móviles y tablets, y con vistas y permisos adaptados según el perfil del usuario.
+ 
+Funcionalidades principales:- Gestión de empresas y locales.- Gestión completa de productos (alta, consulta, modificación y baja).- Clasificación por categorías.
+- Control y actualización de stock.
+- Avisos automáticos de stock bajo.
+- Interfaz sencilla, accesible y con diseño responsive.
+- Gestión de perfiles y permisos de usuario.
+- Centralización integral de la información.
+
