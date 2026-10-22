@@ -1,3 +1,4 @@
+## 1.7 Estructura de la Memoria
 - Capítulo 1 (Introducción): Presentación del proyecto, contexto, problema detectado, propuesta de solución, objetivos, alcance, limitaciones y exclusiones.   
 
 - Capítulo 2 (Análisis del contexto y viabilidad): Estudio del sector, perfiles de usuario, análisis comparativo de la competencia (benchmarking), viabilidad económica/técnica y matriz de riesgos iniciales.   
