@@ -1,8 +1,8 @@
 # Sprint 1 - Análisis inicial
 
-## 1. Análisis inicial
+## 1.1 Análisis inicial
 
-### 1.1. Identificación del público objetivo
+### 1.1.1 Identificación del público objetivo
 
 El análisis del público objetivo se ha realizado teniendo en cuenta que la aplicación está destinada a la gestión de stock de diferentes empresas y locales, por lo que sus usuarios presentan perfiles, necesidades y contextos de uso distintos. Identificar estos perfiles permite orientar las decisiones de diseño hacia una experiencia sencilla, clara e intuitiva.
 
@@ -12,7 +12,7 @@ El análisis del público objetivo se ha realizado teniendo en cuenta que la apl
 
 - **Personal operativo:** realiza tareas puntuales (recuento, entrada de pedidos) bajo supervisión, con acceso limitado a lo esencial. Requiere procesos visuales, con el mínimo de pasos posible, desde dispositivos móviles.
 
-### 1.2. Objetivos principales de la interfaz
+### 1.1.2 Objetivos principales de la interfaz
 
 Los principales objetivos de la interfaz se han definido teniendo en cuenta las necesidades de una aplicación destinada a la **gestión de stock de diferentes empresas y locales**. Se busca que el usuario pueda consultar y gestionar la información de forma rápida, clara y eficiente.
 
@@ -31,7 +31,7 @@ Los principales objetivos de la interfaz se han definido teniendo en cuenta las 
 En conjunto, estos objetivos buscan que la interfaz permita **gestionar grandes cantidades de información de forma sencilla**, reduciendo el tiempo necesario para realizar las tareas habituales y facilitando la toma de decisiones relacionadas con el stock.
 
 
-### 1.3. Benchmarking: referencias de sitios similares
+### 1.1.3 Benchmarking: referencias de sitios similares
 
 - **Zoho Inventory:** software de gestión de inventario pensado para pymes y comercios con venta multicanal. Permite ver las existencias en tiempo real, gestionar varios almacenes y controlar proveedores con órdenes de compra. Destaca por sus avisos cuando el stock de un producto es bajo y porque conecta bien el stock con las compras y las ventas. Como punto débil, su interfaz es funcional pero bastante genérica.
 
