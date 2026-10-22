@@ -1,4 +1,4 @@
-## 1.3. Propuesta de Solución
+## 1.3 Propuesta de Solución
 
 Aplicación web centralizada: Desarrollo de un sistema donde cada empresa pueda dar de alta productos, organizarlos en categorías, actualizar existencias y configurar alertas automáticas al alcanzar un umbral mínimo de stock.
 Acceso multiempresa unificado: Posibilidad de cambiar entre distintas empresas o locales gestionados desde una misma sesión, sin necesidad de cerrar sesión ni crear cuentas independientes.
