@@ -1,3 +1,5 @@
+## 2.8 Análisis de riesgo inicial
+
 | ID  | Descripción del riesgo | Probabilidad | Impacto | Criticidad | Justificación |
 |-----|------------------------|--------------|---------|------------|---------------|
 | R01 | Falta de experiencia con Angular, Node.js o alguna librería utilizada. | Media | Alto | Alta | **Falta de experiencia tecnológica:** El proyecto utiliza Angular, Node.js, Express y MySQL. La falta de experiencia con alguna de estas tecnologías puede provocar dificultades durante la implementación y aumentar el tiempo necesario para completar las tareas. |
