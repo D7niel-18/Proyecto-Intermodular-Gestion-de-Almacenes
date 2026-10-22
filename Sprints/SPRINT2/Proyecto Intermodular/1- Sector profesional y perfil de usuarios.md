@@ -1,4 +1,5 @@
-# 2.1. Sector profesional y perfil de usuarios
+# Sprint 2 - Sector profesional y perfil de usuarios
+## 2.1. Sector profesional y perfil de usuarios
 
 ## 2.1.1. Caracterización del sector
 
