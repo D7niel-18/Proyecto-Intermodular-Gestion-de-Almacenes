@@ -1,3 +1,5 @@
+## Objetivos del Proyecto
+
 Objetivo general. 
 - Desarrollar una aplicación web de gestión de inventario multiempresa que permita centralizar y facilitar el control de existencias de distintas empresas y almacenes desde una única plataforma.   
 - Ofrecer un control ágil de productos y categorías, incorporar alertas de stock bajo para prevenir roturas de inventario y reducir errores derivados de procesos manuales.   
