@@ -1,7 +1,7 @@
-## 1.1. Contexto del proyecto
+## 1.1 Contexto del proyecto
 StockLink es una aplicación web de gestión de inventario pensada para pequeñas y medianas empresas (PYMEs) con uno o varios locales (comercio minorista, hostelería, farmacias o almacenes) que hoy gestionan su stock de forma manual, mediante hojas de cálculo, papel o de memoria. El proyecto también da respuesta a multiempresas y franquicias pequeñas-medianas que necesitan visualizar todos sus locales desde una misma sesión..
 
-## 1.2. Problema o necesidad detectada
+## 1.2 Problema o necesidad detectada
 Para identificar el problema real que resuelve StockLink, se ha investigado en fuentes especializadas en gestión empresarial y pymes, buscando datos sobre los errores más comunes a la hora de controlar el stock en negocios pequeños y medianos. En concreto, se ha consultado Acelera pyme, el portal oficial del Gobierno de España dedicado a la digitalización de pymes, por tratarse de una fuente institucional y fiable sobre las dificultades reales que enfrentan estas empresas.
 
 Según esta fuente, uno de los errores más comunes en la gestión de stock es no contar con un software especializado y controlar el inventario con Excel, libreta o de memoria, lo que provoca errores en el inventario (https://www.acelerapyme.gob.es/novedades/pildora/los-errores-mas-comunes-en-la-gestion-de-stock). Esto confirma que el problema que aborda nuestro proyecto no es algo supuesto, sino una necesidad documentada y extendida entre las pymes.
@@ -16,7 +16,7 @@ Los distintos perfiles de usuario implicados son:
 * Encargados de local: consultan y actualizan el stock diariamente.
 * Personal operativo: registra entradas y salidas de productos.
 
-## 1.3. Propuesta de Solución
+## 1.3 Propuesta de Solución
 
 Aplicación web centralizada: Desarrollo de un sistema donde cada empresa pueda dar de alta productos, organizarlos en categorías, actualizar existencias y configurar alertas automáticas al alcanzar un umbral mínimo de stock.
 Acceso multiempresa unificado: Posibilidad de cambiar entre distintas empresas o locales gestionados desde una misma sesión, sin necesidad de cerrar sesión ni crear cuentas independientes.
@@ -29,7 +29,7 @@ Funcionalidades principales:- Gestión de empresas y locales.- Gestión completa
 - Gestión de perfiles y permisos de usuario.
 - Centralización integral de la información.
 
-## Objetivos del Proyecto
+## 1.4 Objetivos del Proyecto
 
 Objetivo general. 
 - Desarrollar una aplicación web de gestión de inventario multiempresa que permita centralizar y facilitar el control de existencias de distintas empresas y almacenes desde una única plataforma.   
@@ -48,3 +48,8 @@ Objetivos específicos.
 - Personalización: Adaptar las vistas y opciones según los permisos del perfil de usuario.  
 -  Identidad visual: Proyectar una imagen profesional, fiable y moderna
 
+## 1.5. Alcance del Proyecto
+- Desarrollo técnico: Comprende el análisis, diseño e implementación funcional de StockLink para la gestión de productos, categorías, existencias, movimientos y alertas de stock.
+- Gestión unificada: Inclusión del módulo multiempresa y multilocal accesible en una sola sesión.   
+- Proyección: Planteado como una solución de implantación a nivel nacional adaptable a diversas PYMEs y escalable según el volumen de datos.   
+- Verificación: Incluye las pruebas necesarias para validar el funcionamiento y cumplimiento de los requisitos establecidos
