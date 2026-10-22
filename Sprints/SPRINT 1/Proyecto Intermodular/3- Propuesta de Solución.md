@@ -1,3 +1,4 @@
+# Sprint 1 - Propuesta de Solución
 ## 1.3 Propuesta de Solución
 
 Aplicación web centralizada: Desarrollo de un sistema donde cada empresa pueda dar de alta productos, organizarlos en categorías, actualizar existencias y configurar alertas automáticas al alcanzar un umbral mínimo de stock.
