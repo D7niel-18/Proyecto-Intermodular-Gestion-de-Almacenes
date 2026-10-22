@@ -1,3 +1,4 @@
+# Sprint 1 - Estructura de la Memoria
 ## 1.7 Estructura de la Memoria
 - Capítulo 1 (Introducción): Presentación del proyecto, contexto, problema detectado, propuesta de solución, objetivos, alcance, limitaciones y exclusiones.   
 
