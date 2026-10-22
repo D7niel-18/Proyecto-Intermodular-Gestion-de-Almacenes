@@ -5,7 +5,7 @@
 
 Así, entonces, el equipo deberá presentar un **plan detallado de creación de la interfaz**, que incluya:
 
-1. **Análisis inicial**  
+## 1. **Análisis inicial**  
    * Identificación del público objetivo.
 
 - El análisis del público objetivo se ha realizado teniendo en cuenta que la aplicación está destinada a la gestión de stock de diferentes empresas y locales, por lo que sus usuarios presentan perfiles, necesidades y contextos de uso distintos. Identificar estos perfiles permite orientar las decisiones de diseño hacia una experiencia sencilla, clara e intuitiva.
@@ -46,7 +46,7 @@ Interfaz adaptada a los distintos perfiles de usuario (administrador, encargado,
 Diseño sencillo, evitando la complejidad típica de un ERP y la sensación de interfaz genérica que tiene Zoho.
 En resumen, no intentamos competir en funciones básicas de inventario, que ya están bien resueltas por estas herramientas, sino en resolver algo que ninguna cubre bien: una pyme con varios negocios independientes, que hoy necesitaría varias cuentas o herramientas distintas, y que con nuestra aplicación lo gestiona todo desde un único sitio.
 
-2. **Plan de diseño de la interfaz**  
+## 2. **Plan de diseño de la interfaz**  
    * Definición de requerimientos funcionales y estéticos.  
    * Elaboración de **bocetos (wireframes)** de la página de inicio y una sección interior (puede hacerse en papel o en herramientas como Figma, Canva, Balsamiq…).  
      En nuestro caso hemos usado FIGMA para la realización de los Wireframe y Mockup hemos hecho una página de login y registro de la web, nos faltaria hacer el dashboard.
@@ -130,7 +130,7 @@ Para la marca, la versión de la aplicación y determinados textos técnicos se 
 
 En conjunto, ambos temas mantienen una identidad visual común, compartiendo estructura, tipografía, componentes y criterios de jerarquía. La posibilidad de alternar entre modo oscuro y claro permite personalizar la experiencia sin afectar a la funcionalidad ni a la organización de la aplicación.
 
-3. **Cronograma de ejecución**  
+## 3. **Cronograma de ejecución**  
    * Dividir el proyecto en fases (análisis, diseño, validación, ajustes).  
    * Representar los tiempos estimados en una tabla o diagrama de Gantt sencillo.
 
