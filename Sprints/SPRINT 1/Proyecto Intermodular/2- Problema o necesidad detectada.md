@@ -1,4 +1,4 @@
-## 1.2. Problema o necesidad detectada
+## 1.2 Problema o necesidad detectada
 
 Para identificar el problema real que resuelve StockLink, se ha investigado en fuentes especializadas en gestión empresarial y pymes, buscando datos sobre los errores más comunes a la hora de controlar el stock en negocios pequeños y medianos. En concreto, se ha consultado Acelera pyme, el portal oficial del Gobierno de España dedicado a la digitalización de pymes, por tratarse de una fuente institucional y fiable sobre las dificultades reales que enfrentan estas empresas.
 
