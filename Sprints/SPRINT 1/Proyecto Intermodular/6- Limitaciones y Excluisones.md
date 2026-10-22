@@ -1,3 +1,4 @@
+# Sprint 1 - Limitaciones y exclusiones
 ## 1.6 Limitaciones y exclusiones
 
 Limitaciones
