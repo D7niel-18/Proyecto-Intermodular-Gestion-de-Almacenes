@@ -1,6 +1,6 @@
 # Sprint 1 - Cronograma de ejecución
 
-3. **Cronograma de ejecución**  
+1.3 **Cronograma de ejecución**  
    * Dividir el proyecto en fases (análisis, diseño, validación, ajustes).  
    * Representar los tiempos estimados en una tabla o diagrama de Gantt sencillo.
 
