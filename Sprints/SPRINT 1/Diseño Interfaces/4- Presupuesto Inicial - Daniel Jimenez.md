@@ -2,9 +2,15 @@
 
 ## 1.4 Presupuesto básico
 
-### 1.4.1 Cómo hemos hecho la estimación
+### 1.4.1 Base de la estimación de horas
 
-Hemos calculado las horas partiendo de lo que dedicamos cada semana al proyecto. Con eso sacamos las horas de cada sprint según las semanas que dura (ahora alineadas con las fechas oficiales de cada Resultado de Aprendizaje del módulo 0615), y después repartimos esas horas en tareas. Las horas totales no las hemos puesto a ojo: salen de sumar las tareas de los seis sprints.
+Las horas no se han fijado de forma arbitraria. Se han calculado con un método en tres pasos:
+
+1. **Capacidad real del equipo.** Cada miembro dedica 12 h/semana al proyecto (6 h en clase + 6 h en casa), dato basado en el horario lectivo del módulo 0615 y en el trabajo autónomo que asumimos.
+2. **Duración de cada sprint.** Se toman las fechas oficiales de inicio y fin de cada Resultado de Aprendizaje (RA) del documento del módulo. Horas por sprint = semanas × 12 h × 3 personas. El Sprint 2 es el más largo (7 semanas) porque el RA2 pesa un 30 % de la nota del módulo, el mayor peso de los seis.
+3. **Descomposición en tareas.** Las horas de cada sprint se reparten en tareas según los contenidos y criterios de evaluación de su RA, asignando más horas a las tareas de mayor complejidad (p. ej. maquetación responsive en S2, wireframes en S1). Se reservan reuniones de coordinación (1 h por reunión y persona) y un 10 % de contingencia para imprevistos.
+
+Las horas totales (696 h) salen de sumar las tareas, las reuniones y la contingencia de los seis sprints, y se contrastan con la capacidad: 232 h por persona entre 19,4 semanas son ≈12 h/semana, la dedicación real disponible.
 
 ### 1.4.2 Dedicación semanal
 
@@ -34,7 +40,7 @@ Comprobación: 232 h entre 19,4 semanas son unas 12 h por semana, que es lo que 
 
 ### 1.4.4 Tareas de cada sprint
 
-Las tareas y proporciones se mantienen igual que en la versión anterior, reescaladas a las nuevas horas totales de cada sprint. Reuniones y contingencia (≈10%) se recalculan según el número real de semanas de cada sprint.
+Las horas de cada sprint se reparten entre las tareas de su RA según la complejidad de cada una. Las reuniones (1 h por reunión y persona) y la contingencia (≈10 %) se calculan según el número real de semanas de cada sprint.
 
 **S1 - Planificación y Prototipado (96 h)**
 
@@ -135,7 +141,7 @@ Las tareas y proporciones se mantienen igual que en la versión anterior, reesca
 
 | Concepto | Horas |
 | --- | ---: |
-| Tareas (S1 a S6) | 604 |
+| Tareas (S1 a S6) | 567 |
 | Reuniones | 60 |
 | Contingencia (≈10 %) | 69 |
 | **Total proyecto** | **696** |
@@ -186,8 +192,8 @@ Se mantiene la tarifa diferenciada por rol usada en la versión anterior, tomada
 ### 1.4.8 Equipos (amortización)
 
 - Portátil: 800 € y 4 años de vida útil → 200 €/año
-- El proyecto dura ahora 20,7 semanas (17/09/26 - 09/02/27) → 200 × 20,7/52 ≈ 80 € por equipo
-- 3 equipos: ≈ **240 €** (valor imputado, no gasto real)
+- El proyecto dura 19,4 semanas lectivas (17/09/26 - 09/02/27) → 200 × 19,4/52 ≈ 75 € por equipo
+- 3 equipos: ≈ **225 €** (valor imputado, no gasto real)
 
 ### 1.4.9 Herramientas y licencias
 
@@ -226,8 +232,8 @@ Se mantiene la tarifa diferenciada por rol usada en la versión anterior, tomada
 | Concepto | Valor |
 | --- | ---: |
 | Recursos humanos (reparto por rol) | 8.249 € |
-| Amortización de equipos | 240 € |
-| **Total** | **8.489 €** |
+| Amortización de equipos | 225 € |
+| **Total** | **8.474 €** |
 
 ### Bloque C - Puesta en producción (primer año, solo si se publica)
 
@@ -253,17 +259,4 @@ Se mantiene la tarifa diferenciada por rol usada en la versión anterior, tomada
 
 ## 1.6 Conclusión
 
-Durante el desarrollo el proyecto no tiene gasto real (0 €), porque usamos herramientas gratuitas y trabajamos en local. El valor estimado del trabajo es de 8.489 €, resultado de repartir las 696 horas entre los tres roles del equipo (diseño UI/UX, desarrollo frontend y SysAdmin/control de calidad) a tarifas junior distintas según cada perfil, más la amortización de los equipos. El proyecto se extiende del 17/09/2026 al 09/02/2027 (19,4 semanas lectivas según el calendario oficial del módulo), con el Sprint 2 (maquetación y estilos) como el más largo al pesar un 30% de la nota. Si se publicara, la puesta en producción costaría unos 62 € el primer año y el mantenimiento anual rondaría los 206 €.
-
----
-
-## 1.7 Cambios respecto a la versión anterior
-
-| Apartado | Antes | Ahora | Motivo |
-| --- | --- | --- | --- |
-| Fechas de los sprints | Estimadas a ojo | Tomadas del documento oficial del módulo (fechas de inicio/fin de cada RA) | El profesor aportó el calendario oficial |
-| Horas totales | 732 h | 696 h | Recalculado con las semanas reales de cada RA |
-| Reparto de semanas | Más o menos iguales por sprint | Muy desigual (S2 = 7 semanas por su peso del 30%) | El peso de cada RA en la nota marca su duración real |
-| Horas por persona | 189/327/216 h | 138/379/179 h | Recalculado con las nuevas horas por sprint |
-| Equipos (amortización) | 264 € (23 semanas) | 240 € (20,7 semanas) | Duración real del proyecto según calendario oficial |
-| Valor del desarrollo | 9.099 € | 8.489 € | Recalculado con las nuevas horas totales |
+Durante el desarrollo el proyecto no tiene gasto real (0 €), porque usamos herramientas gratuitas y trabajamos en local. El valor estimado del trabajo es de 8.474 €, resultado de repartir las 696 horas entre los tres roles del equipo (diseño UI/UX, desarrollo frontend y SysAdmin/control de calidad) a tarifas junior distintas según cada perfil, más la amortización de los equipos. El proyecto se extiende del 17/09/2026 al 09/02/2027 (19,4 semanas lectivas según el calendario oficial del módulo), con el Sprint 2 (maquetación y estilos) como el más largo al pesar un 30% de la nota. Si se publicara, la puesta en producción costaría unos 62 € el primer año y el mantenimiento anual rondaría los 206 €.
