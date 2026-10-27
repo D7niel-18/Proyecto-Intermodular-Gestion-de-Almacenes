@@ -72,7 +72,9 @@ En resumen, no intentamos competir en funciones básicas de inventario, que ya e
    * Mockup Dashboard (Modo claro)
 <img width="1550" height="820" alt="Mockup -Dashboard - blanco" src="https://github.com/user-attachments/assets/52337165-5b0b-4e3f-80df-20e9e4c93183" />
 
-*  Prototipo.  
+  *  Prototipo.  
+  [Prototipo Web usando Stitch  ](https://stitch.google.com/preview/7971768782049281677?node-id=49c4c46be7da4c6aa4f76b6c2cab9637)
+
   Se hara un prototipo inicial usando HTML semántico, CSS y algo de Javascript  
   * Justificación de las decisiones de diseño (colores, tipografía, estructura).
 
