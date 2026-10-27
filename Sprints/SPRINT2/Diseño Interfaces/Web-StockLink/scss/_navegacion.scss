@@ -1,0 +1,114 @@
+// =============================================================
+// BLOQUES: navegacion, usuario y logo
+// Todo lo que va dentro de la barra lateral.
+// =============================================================
+@use "variables" as *;
+@use "mixins" as *;
+
+// ---------- Menú de navegación ----------
+.navegacion {
+  @include flex-columna(1.25rem);
+
+  &__grupo {
+    @include flex-columna(0.5rem);
+  }
+
+  &__titulo {
+    @include texto-mono;
+    color: var(--sl-text-faint);
+  }
+
+  &__lista {
+    @include flex-columna(0.25rem);
+  }
+
+  &__enlace {
+    @include flex-fila($hueco: 0.75rem);
+    padding: 0.5rem 0.75rem;
+    font-size: $texto-pequeno;
+    color: var(--sl-text-muted);
+    border-radius: $radio-medio;
+    transition:
+      background-color $transicion,
+      color $transicion;
+
+    &:hover {
+      color: var(--sl-text);
+      text-decoration: none;
+      background: var(--sl-bg-elevated);
+    }
+
+    // Enlace de la página actual
+    &--activo {
+      color: var(--sl-primary);
+      background: var(--sl-primary-soft);
+    }
+  }
+
+  // Circulito que aparece junto al nombre de la empresa
+  &__punto {
+    width: 6px;
+    height: 6px;
+    background: currentcolor;
+    border-radius: 50%;
+  }
+
+  &__contador {
+    margin-left: auto;
+  }
+}
+
+// ---------- Usuario (parte inferior de la barra lateral) ----------
+.usuario {
+  @include flex-fila($hueco: 0.75rem);
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--sl-border);
+
+  &__avatar {
+    @include flex-fila($justificar: center);
+    width: 24px;
+    height: 24px;
+    font-size: $texto-minimo;
+    font-weight: 700;
+    color: var(--sl-on-primary);
+    background: var(--sl-primary);
+    border-radius: 50%;
+  }
+
+  &__nombre {
+    font-size: $texto-pequeno;
+    font-weight: 600;
+  }
+
+  &__accion {
+    margin-left: auto;
+  }
+}
+
+// ---------- Logo ----------
+.logo {
+  @include flex-fila($hueco: 0.5rem);
+
+  &__icono {
+    width: 18px;
+    height: 18px;
+    color: var(--sl-primary);
+  }
+
+  &__nombre {
+    font-family: $fuente-mono;
+    font-size: $texto-pequeno;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  &__version {
+    padding: 1px 0.25rem;
+    font-family: $fuente-mono;
+    font-size: $texto-minimo;
+    color: var(--sl-text-faint);
+    border: 1px solid var(--sl-border);
+    border-radius: $radio-pequeno;
+  }
+}

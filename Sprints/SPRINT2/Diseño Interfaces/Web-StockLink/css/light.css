@@ -1,0 +1,19 @@
+:root[data-theme=light] {
+  --sl-bg: #f4f6fa;
+  --sl-bg-elevated: #fff;
+  --sl-bg-panel: #fff;
+  --sl-bg-input: #f8fafc;
+  --sl-border: #e2e8f0;
+  --sl-border-strong: #cbd5e1;
+  --sl-text: #0f1724;
+  --sl-text-muted: #556275;
+  --sl-text-faint: #8794a7;
+  --sl-primary: #1f7ae0;
+  --sl-primary-hover: #1565c0;
+  --sl-on-primary: #fff;
+  --sl-primary-soft: rgba(31, 122, 224, 0.12);
+  --sl-success: #14a35c;
+  --sl-danger: #d93636;
+  --sl-warning: #c77700;
+  color-scheme: light;
+}

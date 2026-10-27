@@ -1,0 +1,109 @@
+// =============================================================
+// BLOQUES: barra-herramientas, acciones, paginacion y formulario
+// Componentes de las páginas de gestión (productos, categorías,
+// almacenes, movimientos y empresas).
+// =============================================================
+@use "variables" as *;
+@use "mixins" as *;
+
+// ---------- Barra de herramientas (buscador y filtros) ----------
+.barra-herramientas {
+  @include flex-fila($hueco: 0.75rem);
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom: 1px solid var(--sl-border);
+
+  // El buscador ocupa el espacio que sobra
+  &__buscador {
+    flex: 1 1 14rem;
+  }
+
+  &__filtro {
+    flex: 0 1 11rem;
+  }
+}
+
+// ---------- Botones de cada fila (Editar / Eliminar) ----------
+.acciones {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &__formulario {
+    margin: 0;
+  }
+}
+
+// ---------- Paginación ----------
+.paginacion {
+  @include flex-fila($justificar: space-between, $hueco: 1rem);
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-top: 1px solid var(--sl-border);
+
+  &__resumen {
+    font-size: $texto-minimo;
+    color: var(--sl-text-muted);
+  }
+
+  &__lista {
+    @include flex-fila($hueco: 0.25rem);
+  }
+
+  &__enlace {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    font-family: $fuente-mono;
+    font-size: $texto-minimo;
+    color: var(--sl-text-muted);
+    border: 1px solid transparent;
+    border-radius: $radio-pequeno;
+
+    &:hover {
+      color: var(--sl-text);
+      text-decoration: none;
+      border-color: var(--sl-border-strong);
+    }
+
+    // Página actual
+    &--activo {
+      color: var(--sl-on-primary);
+      background: var(--sl-primary);
+    }
+
+    // "Anterior" o "Siguiente" cuando no hay más páginas
+    &--desactivado {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
+
+// ---------- Formulario de alta y edición ----------
+.formulario {
+  // Rejilla de campos: 1 columna en móvil, 2 desde tablet
+  &__campos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+
+    @include desde($ancho-tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &__campo {
+    min-width: 0;
+
+    // Campo que ocupa las dos columnas (por ejemplo, una descripción)
+    &--completo {
+      grid-column: 1 / -1;
+    }
+  }
+
+  // Botones Cancelar y Guardar alineados a la derecha
+  &__acciones {
+    @include flex-fila($justificar: flex-end, $hueco: 0.75rem);
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,227 @@
+// =============================================================
+// BLOQUES: tabla-datos, etiqueta, movimiento y almacen
+// =============================================================
+@use "variables" as *;
+@use "mixins" as *;
+
+// ---------- Tabla ----------
+.tabla-datos {
+  font-size: $texto-pequeno;
+
+  &__encabezado {
+    @include texto-mono;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+
+    // Columna de acciones alineada a la derecha
+    &--acciones {
+      text-align: right;
+    }
+  }
+
+  // Línea separadora entre filas (menos en la última)
+  &__fila:not(:last-child) &__celda {
+    border-bottom: 1px solid var(--sl-border);
+  }
+
+  &__celda {
+    padding: 0.75rem 1rem;
+    color: var(--sl-text-muted);
+    vertical-align: middle;
+
+    &--destacada {
+      color: var(--sl-text);
+    }
+
+    &--numerica {
+      font-family: $fuente-mono;
+    }
+
+    &--acciones {
+      text-align: right;
+      white-space: nowrap;
+    }
+  }
+
+  &__producto {
+    display: block;
+    font-weight: 600;
+    color: var(--sl-text);
+  }
+
+  &__referencia {
+    font-family: $fuente-mono;
+    font-size: $texto-minimo;
+    color: var(--sl-text-faint);
+  }
+}
+
+// Permite hacer scroll horizontal si la tabla no cabe en pantalla
+.tabla-contenedor {
+  overflow-x: auto;
+}
+
+// ---------- Etiqueta de estado ----------
+.etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: $fuente-mono;
+  font-size: $texto-minimo;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  // Variantes de estado: cada una pinta un circulito delante del texto
+  &--correcta {
+    color: var(--sl-success);
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: currentcolor;
+      border-radius: 50%;
+    }
+  }
+
+  &--advertencia {
+    color: var(--sl-warning);
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: currentcolor;
+      border-radius: 50%;
+    }
+  }
+
+  &--peligro {
+    color: var(--sl-danger);
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: currentcolor;
+      border-radius: 50%;
+    }
+  }
+
+  // Globito con el número de alertas
+  &--contador {
+    padding: 0 0.5rem;
+    color: var(--sl-on-primary);
+    background: var(--sl-danger);
+    border-radius: $radio-total;
+  }
+}
+
+// ---------- Movimiento de stock ----------
+.movimiento {
+  @include flex-fila($alinear: flex-start, $justificar: space-between, $hueco: 1rem);
+  padding: 0.75rem 1rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--sl-border);
+  }
+
+  &__nombre {
+    font-size: $texto-pequeno;
+    font-weight: 600;
+  }
+
+  &__detalle {
+    font-size: $texto-minimo;
+    color: var(--sl-text-muted);
+  }
+
+  &__datos {
+    text-align: right;
+  }
+
+  &__tipo {
+    @include texto-mono;
+    display: block;
+    font-weight: 600;
+  }
+
+  &__cantidad {
+    font-family: $fuente-mono;
+    font-size: $texto-minimo;
+    color: var(--sl-text-muted);
+  }
+
+  // Entrada en verde, salida en rojo
+  &--entrada &__tipo {
+    color: var(--sl-success);
+  }
+
+  &--salida &__tipo {
+    color: var(--sl-danger);
+  }
+}
+
+// ---------- Almacén (tarjeta con barra de ocupación) ----------
+.almacen {
+  padding: 1rem;
+  background: var(--sl-bg-panel);
+  border: 1px solid var(--sl-border);
+  border-radius: $radio-medio;
+
+  &__cabecera {
+    @include flex-fila($alinear: flex-start, $justificar: space-between, $hueco: 0.75rem);
+  }
+
+  &__nombre {
+    font-size: $texto-pequeno;
+    font-weight: 600;
+  }
+
+  &__ubicacion {
+    font-size: $texto-minimo;
+    color: var(--sl-text-muted);
+  }
+
+  &__categoria {
+    padding: 0.25rem 0.5rem;
+    font-size: $texto-minimo;
+    color: var(--sl-primary);
+    background: var(--sl-primary-soft);
+    border-radius: $radio-pequeno;
+  }
+
+  // Fondo de la barra
+  &__medidor {
+    height: 6px;
+    margin-top: 1rem;
+    overflow: hidden;
+    background: var(--sl-border);
+    border-radius: $radio-total;
+  }
+
+  // Parte rellena: su ancho viene de la variable --ocupacion-almacen,
+  // que se define en el HTML con style="--ocupacion-almacen: 50%"
+  &__barra {
+    display: block;
+    height: 100%;
+    width: var(--ocupacion-almacen, 0%);
+    background: var(--sl-success);
+    border-radius: inherit;
+    transition: width 0.4s ease;
+  }
+
+  &__resumen {
+    @include flex-fila($justificar: space-between);
+    margin-top: 0.5rem;
+    font-family: $fuente-mono;
+    font-size: $texto-minimo;
+    color: var(--sl-text-faint);
+  }
+
+  // Almacén lleno: la barra se pinta en rojo
+  &--completo &__barra {
+    background: var(--sl-danger);
+  }
+}

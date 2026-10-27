@@ -1,0 +1,48 @@
+// =============================================================
+// MIXINS
+// Bloques de código reutilizables. Se usan con @include.
+// =============================================================
+@use "variables" as *;
+
+// Media query "mobile first": el estilo se aplica desde ese ancho.
+// Uso: @include desde($ancho-tablet) { ... }
+@mixin desde($ancho) {
+  @media (min-width: $ancho) {
+    @content;
+  }
+}
+
+// Caja flex en columna con separación entre elementos.
+// Uso: @include flex-columna(1rem);
+@mixin flex-columna($hueco) {
+  display: flex;
+  flex-direction: column;
+  gap: $hueco;
+}
+
+// Caja flex en fila. Todos los parámetros tienen valor por defecto,
+// así que solo hay que indicar los que cambian.
+// Uso: @include flex-fila($justificar: space-between);
+@mixin flex-fila($alinear: center, $justificar: flex-start, $hueco: null) {
+  display: flex;
+  flex-direction: row;
+  align-items: $alinear;
+  justify-content: $justificar;
+  gap: $hueco;
+}
+
+// Texto pequeño, en mayúsculas y con fuente monoespaciada
+// (títulos de tabla, etiquetas de formulario, etc.)
+@mixin texto-mono {
+  font-family: $fuente-mono;
+  font-size: $texto-minimo;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sl-text-muted);
+}
+
+// Borde que aparece al navegar con teclado
+@mixin foco {
+  outline: 2px solid var(--sl-primary);
+  outline-offset: 2px;
+}

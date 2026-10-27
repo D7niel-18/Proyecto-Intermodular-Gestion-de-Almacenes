@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="js/tema.js" defer></script>
+    <script src="js/tablas.js" defer></script>
+    <script src="js/formularios.js" defer></script>
+    <script src="js/eliminar.js" defer></script>
+    
+    <title>StockLink · Movimientos</title>
+    <meta name="description" content="Registro de entradas, salidas y traspasos de stock.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="alternate stylesheet" href="css/light.css" title="Claro">
+</head>
+
+<body>
+
+    <div class="aplicacion">
+
+        <!-- Barra lateral -->
+        <aside class="aplicacion__barra-lateral">
+
+            <div class="logo">
+                <svg
+                    class="logo__icono"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                >
+                    <path d="M12 3l4 2.3v4.6L12 12.2 8 9.9V5.3L12 3zM6 12.8l4 2.3v4.6L6 22l-4-2.3v-4.6l4-2.3zm12 0l4 2.3v4.6L18 22l-4-2.3v-4.6l4-2.3z"/>
+                </svg>
+
+                <span class="logo__nombre">StockLink</span>
+            </div>
+
+            <nav class="navegacion" aria-label="Navegación principal">
+
+                <div class="navegacion__grupo">
+
+                    <h2 class="navegacion__titulo">Empresa</h2>
+
+                    <ul class="navegacion__lista">
+                        <li>
+                            <a class="navegacion__enlace" href="empresas.html">
+                                Todas las empresas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace navegacion__enlace--activo" href="#">
+                                <span class="navegacion__punto" aria-hidden="true"></span>
+                                TechParts
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="#">
+                                <span class="navegacion__punto" aria-hidden="true"></span>
+                                AgriSur
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="#">
+                                <span class="navegacion__punto" aria-hidden="true"></span>
+                                MedStore
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="navegacion__grupo">
+
+                    <h2 class="navegacion__titulo">Navegación</h2>
+
+                    <ul class="navegacion__lista">
+                        <li>
+                            <a class="navegacion__enlace" href="dashboard.html">
+                                Panel de control
+                                <span class="etiqueta etiqueta--contador navegacion__contador">2</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="almacenes.html">
+                                Almacenes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace navegacion__enlace--activo" href="movimientos.html" aria-current="page">
+                                Movimientos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="empresas.html">
+                                Empresas
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <!-- Usuario y cambio de tema -->
+            <div class="usuario">
+
+                <span class="usuario__avatar" aria-hidden="true">A</span>
+
+                <span class="usuario__nombre">Administrador</span>
+
+                <button
+                    class="boton boton--fantasma boton--pequeno usuario__accion"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Cambiar tema"
+                >
+                    Tema
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="aplicacion__contenido">
+
+            <header class="aplicacion__cabecera">
+
+                <div>
+                    <h1 class="aplicacion__titulo">Movimientos</h1>
+                    <p class="aplicacion__subtitulo">Empresa: TechParts S.L.</p>
+                </div>
+
+                <a class="boton boton--principal" href="#formulario">Nuevo movimiento</a>
+
+            </header>
+
+            <!-- Listado -->
+            <section class="panel" aria-labelledby="titulo-listado">
+
+                <header class="panel__cabecera">
+                    <h2 class="panel__titulo" id="titulo-listado">Listado de movimientos</h2>
+                    <span class="panel__informacion">4 elementos</span>
+                </header>
+
+                <form class="barra-herramientas" action="movimientos.html" method="get" role="search">
+
+                    <div class="barra-herramientas__buscador">
+                        <label class="u-solo-lectores" for="buscar">Buscar movimientos</label>
+                        <input
+                            class="campo__entrada"
+                            id="buscar"
+                            name="q"
+                            type="search"
+                            placeholder="Buscar por producto o documento"
+                        >
+                    </div>
+
+                    <div class="barra-herramientas__filtro">
+                        <label class="u-solo-lectores" for="filtro-tipo">Filtrar por tipo</label>
+                        <select class="campo__entrada" id="filtro-tipo" name="tipo">
+                            <option value="">Todos los tipos</option>
+                            <option value="entrada">Entrada</option>
+                            <option value="salida">Salida</option>
+                            <option value="traspaso">Traspaso</option>
+                        </select>
+                    </div>
+
+                    <div class="barra-herramientas__filtro">
+                        <label class="u-solo-lectores" for="filtro-almacen">Filtrar por almacén</label>
+                        <select class="campo__entrada" id="filtro-almacen" name="almacen">
+                            <option value="">Todos los almacenes</option>
+                            <option value="1">Central Sevilla</option>
+                            <option value="2">Logística Norte</option>
+                        </select>
+                    </div>
+
+                    <button class="boton boton--fantasma" type="submit">Filtrar</button>
+
+                </form>
+
+                <div class="tabla-contenedor">
+
+                    <table class="tabla-datos">
+
+                        <thead>
+                            <tr>
+                                <th class="tabla-datos__encabezado" scope="col">Fecha</th>
+                                <th class="tabla-datos__encabezado" scope="col">Producto</th>
+                                <th class="tabla-datos__encabezado" scope="col">Almacén</th>
+                                <th class="tabla-datos__encabezado" scope="col">Tipo</th>
+                                <th class="tabla-datos__encabezado" scope="col">Cantidad</th>
+                                <th class="tabla-datos__encabezado" scope="col">Usuario</th>
+                                <th class="tabla-datos__encabezado tabla-datos__encabezado--acciones" scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="tabla-datos__fila">
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    20/10/2026
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="tabla-datos__producto">Teclados</span>
+                                    <span class="tabla-datos__referencia">Reposición pedido #M-0023</span>
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Central Sevilla
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="etiqueta etiqueta--correcta">Entrada</span>
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    + 2000 uds.
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Administrador
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--acciones">
+                                    <div class="acciones">
+
+                                        <a
+                                            class="boton boton--fantasma boton--pequeno"
+                                            href="movimientos.html?editar=1#formulario"
+                                            aria-label="Editar movimiento de Teclados del 20/10/2026"
+                                        >
+                                            Editar
+                                        </a>
+
+                                        <form class="acciones__formulario" action="movimientos.html" method="post">
+                                            <input type="hidden" name="accion" value="eliminar">
+                                            <input type="hidden" name="id" value="1">
+                                            <button
+                                                class="boton boton--fantasma boton--pequeno boton--peligro"
+                                                type="submit"
+                                                aria-label="Eliminar movimiento de Teclados del 20/10/2026"
+                                            >
+                                                Eliminar
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tabla-datos__fila">
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    19/10/2026
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="tabla-datos__producto">Ordenadores HP</span>
+                                    <span class="tabla-datos__referencia">Pedido cliente #CLI-0447</span>
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Central Sevilla
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="etiqueta etiqueta--peligro">Salida</span>
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    − 90 uds.
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Administrador
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--acciones">
+                                    <div class="acciones">
+
+                                        <a
+                                            class="boton boton--fantasma boton--pequeno"
+                                            href="movimientos.html?editar=2#formulario"
+                                            aria-label="Editar movimiento de Ordenadores HP del 19/10/2026"
+                                        >
+                                            Editar
+                                        </a>
+
+                                        <form class="acciones__formulario" action="movimientos.html" method="post">
+                                            <input type="hidden" name="accion" value="eliminar">
+                                            <input type="hidden" name="id" value="2">
+                                            <button
+                                                class="boton boton--fantasma boton--pequeno boton--peligro"
+                                                type="submit"
+                                                aria-label="Eliminar movimiento de Ordenadores HP del 19/10/2026"
+                                            >
+                                                Eliminar
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tabla-datos__fila">
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    17/10/2026
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="tabla-datos__producto">Ratón Oficina</span>
+                                    <span class="tabla-datos__referencia">Pedido cliente #CLI-0431</span>
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Logística Norte
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="etiqueta etiqueta--peligro">Salida</span>
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    − 55 uds.
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Administrador
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--acciones">
+                                    <div class="acciones">
+
+                                        <a
+                                            class="boton boton--fantasma boton--pequeno"
+                                            href="movimientos.html?editar=3#formulario"
+                                            aria-label="Editar movimiento de Ratón Oficina del 17/10/2026"
+                                        >
+                                            Editar
+                                        </a>
+
+                                        <form class="acciones__formulario" action="movimientos.html" method="post">
+                                            <input type="hidden" name="accion" value="eliminar">
+                                            <input type="hidden" name="id" value="3">
+                                            <button
+                                                class="boton boton--fantasma boton--pequeno boton--peligro"
+                                                type="submit"
+                                                aria-label="Eliminar movimiento de Ratón Oficina del 17/10/2026"
+                                            >
+                                                Eliminar
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tabla-datos__fila">
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    15/10/2026
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="tabla-datos__producto">Monitor 24&quot;</span>
+                                    <span class="tabla-datos__referencia">Traspaso entre almacenes</span>
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Logística Norte
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    <span class="etiqueta etiqueta--advertencia">Traspaso</span>
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                    30 uds.
+                                </td>
+
+                                <td class="tabla-datos__celda">
+                                    Administrador
+                                </td>
+
+                                <td class="tabla-datos__celda tabla-datos__celda--acciones">
+                                    <div class="acciones">
+
+                                        <a
+                                            class="boton boton--fantasma boton--pequeno"
+                                            href="movimientos.html?editar=4#formulario"
+                                            aria-label="Editar movimiento de Monitor 24&quot; del 15/10/2026"
+                                        >
+                                            Editar
+                                        </a>
+
+                                        <form class="acciones__formulario" action="movimientos.html" method="post">
+                                            <input type="hidden" name="accion" value="eliminar">
+                                            <input type="hidden" name="id" value="4">
+                                            <button
+                                                class="boton boton--fantasma boton--pequeno boton--peligro"
+                                                type="submit"
+                                                aria-label="Eliminar movimiento de Monitor 24&quot; del 15/10/2026"
+                                            >
+                                                Eliminar
+                                            </button>
+                                        </form>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <nav class="paginacion" aria-label="Paginación de movimientos">
+
+                    <p class="paginacion__resumen">Mostrando 1–4 de 4</p>
+
+                    <ul class="paginacion__lista">
+                        <li>
+                            <a class="paginacion__enlace paginacion__enlace--desactivado" href="#" aria-disabled="true">
+                                Anterior
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="paginacion__enlace paginacion__enlace--activo" href="#" aria-current="page">1</a>
+                        </li>
+
+                        <li>
+                            <a class="paginacion__enlace paginacion__enlace--desactivado" href="#" aria-disabled="true">
+                                Siguiente
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </section>
+
+            <!-- Formulario de alta y edición -->
+            <section class="panel" id="formulario" aria-labelledby="titulo-formulario">
+
+                <header class="panel__cabecera">
+                    <h2 class="panel__titulo" id="titulo-formulario">Nuevo movimiento</h2>
+                    <span class="panel__informacion">Los campos con * son obligatorios</span>
+                </header>
+
+                <div class="panel__contenido">
+
+                    <form class="formulario" action="movimientos.html" method="post" novalidate>
+
+                        <!-- Vacío al crear. En modo edición lleva el id del registro -->
+                        <input type="hidden" name="id" value="">
+
+                        <div class="formulario__campos">
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="tipo">Tipo de movimiento *</label>
+                                </div>
+
+                                <select class="campo__entrada" id="tipo" name="tipo" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="entrada">Entrada</option>
+                                    <option value="salida">Salida</option>
+                                    <option value="traspaso">Traspaso</option>
+                                </select>
+
+                            </div>
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="fecha">Fecha *</label>
+                                </div>
+
+                                <input class="campo__entrada" id="fecha" name="fecha" type="date" required>
+
+                            </div>
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="producto">Producto *</label>
+                                </div>
+
+                                <select class="campo__entrada" id="producto" name="producto" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="1">Ratón Oficina</option>
+                                    <option value="2">Teclados</option>
+                                    <option value="3">Ordenadores HP</option>
+                                    <option value="4">Monitor 24&quot;</option>
+                                </select>
+
+                            </div>
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="almacen">Almacén *</label>
+                                </div>
+
+                                <select class="campo__entrada" id="almacen" name="almacen" required>
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="1">Central Sevilla</option>
+                                    <option value="2">Logística Norte</option>
+                                </select>
+
+                            </div>
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="cantidad">Cantidad (uds.) *</label>
+                                </div>
+
+                                <input class="campo__entrada" id="cantidad" name="cantidad" type="number" placeholder="0" min="1" required>
+
+                            </div>
+
+                            <div class="campo formulario__campo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="documento">Documento</label>
+                                </div>
+
+                                <input class="campo__entrada" id="documento" name="documento" type="text" placeholder="#M-0024">
+                                <p class="campo__ayuda">Número de pedido o albarán.</p>
+
+                            </div>
+
+                            <div class="campo formulario__campo formulario__campo--completo">
+
+                                <div class="campo__cabecera">
+                                    <label class="campo__etiqueta" for="motivo">Motivo</label>
+                                </div>
+
+                                <textarea class="campo__entrada campo__entrada--multilinea" id="motivo" name="motivo" rows="4" placeholder="Por qué se realiza el movimiento"></textarea>
+
+                            </div>
+
+                        </div>
+
+                        <div class="formulario__acciones">
+                            <a class="boton boton--fantasma" href="movimientos.html">Cancelar</a>
+                            <button class="boton boton--principal" type="submit">Guardar movimiento</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

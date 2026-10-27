@@ -1,0 +1,119 @@
+// =============================================================
+// BASE
+// Reset, colores del tema oscuro (por defecto) y estilos globales.
+// Los colores son variables CSS (--sl-...) y no variables SCSS
+// porque así el tema claro puede sustituirlas desde light.scss.
+// =============================================================
+@use "variables" as *;
+@use "mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --sl-bg: #0b0f17;
+  --sl-bg-elevated: #141a24;
+  --sl-bg-panel: #10151e;
+  --sl-bg-input: #0e131b;
+  --sl-border: #1f2733;
+  --sl-border-strong: #2a3445;
+  --sl-text: #e6edf6;
+  --sl-text-muted: #8b97a8;
+  --sl-text-faint: #5b6677;
+  --sl-primary: #4da3ff;
+  --sl-primary-hover: #70b5ff;
+  --sl-on-primary: #06101f;
+  --sl-primary-soft: rgba(77, 163, 255, 0.14);
+  --sl-success: #3ddc84;
+  --sl-danger: #ff5c5c;
+  --sl-warning: #ffb547;
+  color-scheme: dark;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: $fuente-texto;
+  font-size: $texto-normal;
+  line-height: 1.5;
+  color: var(--sl-text);
+  background: var(--sl-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: var(--sl-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    @include foco;
+  }
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+}
+
+::selection {
+  background: var(--sl-primary-soft);
+}
+
+// Si el usuario prefiere menos movimiento, se desactivan las animaciones
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

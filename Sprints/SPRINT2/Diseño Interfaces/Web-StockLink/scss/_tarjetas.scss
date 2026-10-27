@@ -1,0 +1,109 @@
+// =============================================================
+// BLOQUES: funcionalidad, tarjeta-estadistica y panel
+// =============================================================
+@use "variables" as *;
+@use "mixins" as *;
+
+// ---------- Funcionalidad (lista de la pantalla de acceso) ----------
+.funcionalidad {
+  @include flex-fila($hueco: 1rem);
+  padding: 1rem;
+  background: var(--sl-bg-elevated);
+  border-radius: $radio-medio;
+
+  &__icono {
+    @include flex-fila($justificar: center);
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--sl-primary);
+    background: var(--sl-primary-soft);
+    border-radius: $radio-medio;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__titulo {
+    font-size: $texto-pequeno;
+    font-weight: 600;
+  }
+
+  &__texto {
+    font-size: $texto-pequeno;
+    color: var(--sl-text-muted);
+  }
+}
+
+// ---------- Tarjeta de estadística ----------
+.tarjeta-estadistica {
+  padding: 1rem;
+  background: var(--sl-bg-elevated);
+  border: 1px solid var(--sl-border);
+  border-radius: $radio-grande;
+
+  &__etiqueta {
+    @include texto-mono;
+  }
+
+  &__valor {
+    margin-top: 0.5rem;
+    font-family: $fuente-mono;
+    font-size: $texto-titulo;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--sl-primary);
+  }
+
+  &__ayuda {
+    margin-top: 0.25rem;
+    font-size: $texto-minimo;
+    color: var(--sl-text-faint);
+  }
+
+  // Variantes de color: cambian el color del número
+  &--correcta &__valor {
+    color: var(--sl-success);
+  }
+
+  &--advertencia &__valor {
+    color: var(--sl-warning);
+  }
+
+  &--peligro &__valor {
+    color: var(--sl-danger);
+  }
+}
+
+// ---------- Panel (caja con cabecera y contenido) ----------
+.panel {
+  background: var(--sl-bg-elevated);
+  border: 1px solid var(--sl-border);
+  border-radius: $radio-grande;
+
+  &__cabecera {
+    @include flex-fila($justificar: space-between);
+    padding: 1rem;
+    border-bottom: 1px solid var(--sl-border);
+  }
+
+  &__titulo {
+    font-size: $texto-normal;
+    font-weight: 600;
+  }
+
+  &__informacion {
+    @include texto-mono;
+  }
+
+  &__contenido {
+    padding: 1rem;
+
+    // Variante sin relleno (para tablas o listas que ocupan todo el panel)
+    &--sin-relleno {
+      padding: 0;
+    }
+  }
+}
