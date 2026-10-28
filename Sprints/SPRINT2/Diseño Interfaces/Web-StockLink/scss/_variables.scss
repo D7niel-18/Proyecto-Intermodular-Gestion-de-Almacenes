@@ -1,0 +1,30 @@
+// =============================================================
+// VARIABLES
+// Valores que se repiten en varios sitios. Si quieres cambiar,
+// por ejemplo, el radio de los bordes, lo cambias aquí una vez.
+// =============================================================
+
+// Fuentes
+$fuente-texto: "Work Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+$fuente-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+// Tamaños de texto
+$texto-minimo: 0.5625rem;
+$texto-pequeno: 0.6875rem;
+$texto-normal: 0.8125rem;
+$texto-grande: 1.25rem;
+$texto-titulo: 1.5rem;
+
+// Radios de borde
+$radio-pequeno: 4px;
+$radio-medio: 6px;
+$radio-grande: 8px;
+$radio-total: 999px;
+
+// Transición habitual
+$transicion: 0.15s ease;
+
+// Anchos de pantalla (breakpoints)
+$ancho-movil-grande: 36rem;
+$ancho-tablet: 48rem;
+$ancho-escritorio: 64rem;

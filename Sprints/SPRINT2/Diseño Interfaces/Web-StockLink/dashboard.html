@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>StockLink · Panel de control</title>
+    <meta name="description" content="Panel de control de inventario multiempresa.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="alternate stylesheet" href="css/light.css" title="Claro">
+</head>
+
+<body>
+
+    <!-- Contenedor general: barra lateral + contenido -->
+    <div class="aplicacion">
+
+        <!-- Barra lateral de navegación, igual en todas las páginas internas -->
+        <aside class="aplicacion__barra-lateral">
+
+            <!-- Logo de la app -->
+            <div class="logo">
+                <svg
+                    class="logo__icono"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    aria-hidden="true"
+                >
+                    <path d="M12 3l4 2.3v4.6L12 12.2 8 9.9V5.3L12 3zM6 12.8l4 2.3v4.6L6 22l-4-2.3v-4.6l4-2.3zm12 0l4 2.3v4.6L18 22l-4-2.3v-4.6l4-2.3z"/>
+                </svg>
+
+                <span class="logo__nombre">StockLink</span>
+            </div>
+
+            <nav class="navegacion" aria-label="Navegación principal">
+
+                <!-- Selector de empresa activa (aquí fijo en "TechParts", en real sería dinámico) -->
+                <div class="navegacion__grupo">
+
+                    <h2 class="navegacion__titulo">Empresa</h2>
+
+                    <ul class="navegacion__lista">
+                        <li>
+                            <a class="navegacion__enlace" href="empresas.html">
+                                Todas las empresas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace navegacion__enlace--activo" href="#">
+                                <span class="navegacion__punto" aria-hidden="true"></span>
+                                TechParts
+                            </a>
+                        </li>
+                </div>
+
+                <!-- Menú principal: enlaces a cada sección de la app -->
+                <div class="navegacion__grupo">
+
+                    <h2 class="navegacion__titulo">Navegación</h2>
+
+                    <ul class="navegacion__lista">
+                        <li>
+                            <!-- Página actual (dashboard), marcada como activa -->
+                            <a
+                                class="navegacion__enlace navegacion__enlace--activo"
+                                href="dashboard.html"
+                                aria-current="page"
+                            >
+                                Panel de control
+                                <!-- Contador de alertas pendientes -->
+                                <span class="etiqueta etiqueta--contador navegacion__contador">2</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="productos.html">
+                                Productos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="categorias.html">
+                                Categorías
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="almacenes.html">
+                                Almacenes
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="movimientos.html">
+                                Movimientos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="navegacion__enlace" href="empresas.html">
+                                Empresas
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+            <!-- Pie de la barra lateral: usuario conectado y botón para cambiar entre tema claro/oscuro -->
+            <div class="usuario">
+
+                <span class="usuario__avatar" aria-hidden="true">A</span>
+
+                <span class="usuario__nombre">Administrador</span>
+
+                <button
+                    class="boton boton--fantasma boton--pequeno usuario__accion"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Cambiar tema"
+                >
+                    Tema
+                </button>
+
+            </div>
+
+        </aside>
+
+        <!-- Contenido principal del dashboard -->
+        <main class="aplicacion__contenido">
+
+            <!-- Cabecera con título de la página y empresa activa -->
+            <header class="aplicacion__cabecera">
+
+                <div>
+                    <h1 class="aplicacion__titulo">Panel de control</h1>
+                    <p class="aplicacion__subtitulo">Empresa: TechParts S.L.</p>
+                </div>
+
+            </header>
+
+            <!-- Resumen de estadísticas: 4 tarjetas con los KPI principales del inventario -->
+            <section class="aplicacion__estadisticas" aria-label="Resumen del inventario">
+
+                <!-- Nº de productos distintos dados de alta -->
+                <article class="tarjeta-estadistica">
+                    <h2 class="tarjeta-estadistica__etiqueta">Referencias activas</h2>
+                    <p class="tarjeta-estadistica__valor">0</p>
+                    <p class="tarjeta-estadistica__ayuda">Productos únicos</p>
+                </article>
+
+                <!-- Suma de unidades en todos los almacenes (variante de color "correcta") -->
+                <article class="tarjeta-estadistica tarjeta-estadistica--correcta">
+                    <h2 class="tarjeta-estadistica__etiqueta">Unidades totales</h2>
+                    <p class="tarjeta-estadistica__valor">2000 uds.</p>
+                    <p class="tarjeta-estadistica__ayuda">En todos los almacenes</p>
+                </article>
+
+                <!-- Valor económico del stock a precio de coste (variante "advertencia") -->
+                <article class="tarjeta-estadistica tarjeta-estadistica--advertencia">
+                    <h2 class="tarjeta-estadistica__etiqueta">Valor en stock</h2>
+                    <p class="tarjeta-estadistica__valor">0&nbsp;€</p>
+                    <p class="tarjeta-estadistica__ayuda">A precio de coste</p>
+                </article>
+
+                <!-- Nº de productos por debajo del stock mínimo (variante "peligro") -->
+                <article class="tarjeta-estadistica tarjeta-estadistica--peligro">
+                    <h2 class="tarjeta-estadistica__etiqueta">Alertas críticas</h2>
+                    <p class="tarjeta-estadistica__valor">1</p>
+                    <p class="tarjeta-estadistica__ayuda">Stock por debajo del mínimo</p>
+                </article>
+
+            </section>
+
+            <!-- Fila con dos paneles lado a lado: alertas de stock y últimos movimientos -->
+            <div class="aplicacion__cuadricula">
+
+                <!-- Panel izquierdo: tabla con los productos en estado crítico/bajo -->
+                <section class="panel" aria-labelledby="titulo-alertas">
+
+                    <header class="panel__cabecera">
+                        <h2 class="panel__titulo" id="titulo-alertas">Alertas de stock</h2>
+                        <span class="panel__informacion">2 elementos</span>
+                    </header>
+
+                    <div class="tabla-contenedor">
+
+                        <table class="tabla-datos">
+
+                            <thead>
+                                <tr>
+                                    <th class="tabla-datos__encabezado" scope="col">Producto</th>
+                                    <th class="tabla-datos__encabezado" scope="col">Almacén</th>
+                                    <th class="tabla-datos__encabezado" scope="col">Stock</th>
+                                    <th class="tabla-datos__encabezado" scope="col">Estado</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- Fila de ejemplo: producto con stock por debajo del mínimo -->
+                                <tr class="tabla-datos__fila">
+
+                                    <td class="tabla-datos__celda">
+                                        <span class="tabla-datos__producto">Ratón</span>
+                                        <span class="tabla-datos__referencia">Ratón Oficina</span>
+                                    </td>
+
+                                    <td class="tabla-datos__celda">Logística Norte</td>
+
+                                    <td class="tabla-datos__celda tabla-datos__celda--numerica">
+                                        45 / 100 uds.
+                                    </td>
+
+                                    <td class="tabla-datos__celda">
+                                        <span class="etiqueta etiqueta--peligro">Crítico</span>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+                <!-- Panel derecho: lista de los últimos movimientos de stock (entradas/salidas) -->
+                <section class="panel" aria-labelledby="titulo-movimientos">
+
+                    <header class="panel__cabecera">
+                        <h2 class="panel__titulo" id="titulo-movimientos">Últimos movimientos</h2>
+                        <span class="panel__informacion">Últimos 7 días</span>
+                    </header>
+
+                    <ul class="movimientos">
+
+                        <!-- Movimiento de tipo entrada (reposición de stock) -->
+                        <li class="movimiento movimiento--entrada">
+
+                            <div class="movimiento__contenido">
+                                <p class="movimiento__nombre">Teclados</p>
+                                <p class="movimiento__detalle">
+                                    Central Sevilla · Reposición pedido #M-0023
+                                </p>
+                            </div>
+
+                            <div class="movimiento__datos">
+                                <span class="movimiento__tipo">+ Entrada</span>
+                                <span class="movimiento__cantidad">2000 uds.</span>
+                            </div>
+
+                        </li>
+
+                        <!-- Movimiento de tipo salida (venta/pedido a cliente) -->
+                        <li class="movimiento movimiento--salida">
+
+                            <div class="movimiento__contenido">
+                                <p class="movimiento__nombre">Ordenadores HP</p>
+                                <p class="movimiento__detalle">
+                                    Central Sevilla · Pedido cliente #CLI-0447
+                                </p>
+                            </div>
+
+                            <div class="movimiento__datos">
+                                <span class="movimiento__tipo">− Salida</span>
+                                <span class="movimiento__cantidad">90 uds.</span>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </div>
+
+            <!-- Sección inferior: ocupación de cada almacén, con barra de progreso -->
+            <section class="panel" aria-labelledby="titulo-capacidad">
+
+                <header class="panel__cabecera">
+                    <h2 class="panel__titulo" id="titulo-capacidad">Capacidad por almacén</h2>
+                </header>
+
+                <div class="panel__contenido">
+
+                    <div class="aplicacion__almacenes">
+
+                        <!-- Almacén al 100% de capacidad: se le añade la clase "--completo" para resaltarlo -->
+                        <article
+                            class="almacen almacen--completo"
+                            style="--ocupacion-almacen: 100%"
+                        >
+
+                            <div class="almacen__cabecera">
+
+                                <div>
+                                    <h3 class="almacen__nombre">Central Sevilla</h3>
+                                    <p class="almacen__ubicacion">Sevilla Este, Sevilla</p>
+                                </div>
+
+                                <span class="almacen__categoria">Electrónica</span>
+
+                            </div>
+
+                            <!-- Barra de ocupación: el ancho se controla con la variable CSS --ocupacion-almacen -->
+                            <div
+                                class="almacen__medidor"
+                                role="progressbar"
+                                aria-valuenow="100"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-label="Ocupación de Central Sevilla"
+                            >
+                                <span class="almacen__barra"></span>
+                            </div>
+
+                            <p class="almacen__resumen">
+                                <span>5000 / 5000 uds.</span>
+                                <span>100%</span>
+                            </p>
+
+                        </article>
+
+                        <!-- Almacén con baja ocupación (8%) -->
+                        <article
+                            class="almacen"
+                            style="--ocupacion-almacen: 8%"
+                        >
+
+                            <div class="almacen__cabecera">
+
+                                <div>
+                                    <h3 class="almacen__nombre">Logística Norte</h3>
+                                    <p class="almacen__ubicacion">Barañáin, Navarra</p>
+                                </div>
+
+                                <span class="almacen__categoria">Electrónica</span>
+
+                            </div>
+
+                            <div
+                                class="almacen__medidor"
+                                role="progressbar"
+                                aria-valuenow="8"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                                aria-label="Ocupación de Logística Norte"
+                            >
+                                <span class="almacen__barra"></span>
+                            </div>
+
+                            <p class="almacen__resumen">
+                                <span>233 / 3000 uds.</span>
+                                <span>8%</span>
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
