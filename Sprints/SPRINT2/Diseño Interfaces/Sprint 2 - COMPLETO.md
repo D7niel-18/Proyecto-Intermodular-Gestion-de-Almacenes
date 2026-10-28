@@ -473,3 +473,8 @@ La siguiente tabla muestra la distribución aproximada de las tareas durante el 
 | Ajustes finales | | | | ■ |
 
 **Resultado esperado:** Al finalizar el Sprint 2, el 29 de octubre de 2026, se espera haber completado la maquetación HTML5, la aplicación de estilos CSS y las pruebas y correcciones finales previstas.
+---
+## COEvaluación
+- Daniel Jiménez Ramírez - 100% de las tareas completadas en tiempo y forma.
+- Pepe Gil Cué - 100% de las tareas completadas en tiempo y forma.
+- Daniel Ortiz - 100% de las tareas completadas en tiempo y forma.
