@@ -1,4 +1,4 @@
-# 2. Análisis de la necesidad
+# 2.2. Análisis de la necesidad
 
 ## 1. Planteamiento del problema
 
