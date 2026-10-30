@@ -161,13 +161,13 @@ StockLink contempla diferentes perfiles de usuario y permisos según las funcion
 
 ---
 
-## 🎨 Identidad visual
+## Identidad visual
 
 La identidad visual de StockLink está planteada para transmitir **fiabilidad, claridad y profesionalidad**.
 
 La aplicación dispone de una propuesta de diseño basada principalmente en dos temas: oscuro y claro.
 
-### 🌙 Tema oscuro
+### Tema oscuro
 
 | Color | Uso |
 | ---------------- | ----------------------------------------------- |
@@ -179,7 +179,7 @@ La aplicación dispone de una propuesta de diseño basada principalmente en dos 
 | `#7A8491` | Texto secundario |
 | `#252C35` | Bordes y separadores |
 
-### ☀️ Tema claro
+### Tema claro
 
 | Color | Uso |
 | ---------------- | ----------------------------------------------- |
@@ -228,7 +228,7 @@ Esta estructura permite separar las diferentes funciones de la aplicación y man
 
 ---
 
-## 🧩 Principales pantallas
+## Principales pantallas
 
 Entre las pantallas principales previstas para la aplicación se encuentran:
 
@@ -273,7 +273,7 @@ El proyecto está desarrollado por un equipo de tres integrantes:
 
 ---
 
-## 🚀 Estado del proyecto
+## Estado del proyecto
 
 StockLink se encuentra actualmente en fase de desarrollo.
 
