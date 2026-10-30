@@ -1,18 +1,18 @@
 # 2. Análisis de la necesidad
 
-## 2.1. Planteamiento del problema
+## 1. Planteamiento del problema
 
 Muchas pequeñas y medianas empresas tienen dificultades para controlar el stock de sus productos. Algunas utilizan Excel, papel o apuntan las cosas de memoria, lo que provoca errores, falta de productos y compras innecesarias.
 
 Por eso surge **StockLink**, una aplicación que permite gestionar el stock de forma sencilla y consultar las existencias de varios locales desde un mismo sitio.
 
-## 2.2. Situación actual (As-Is)
+## 2. Situación actual (As-Is)
 
 Actualmente, muchas empresas controlan sus productos de forma manual. Cuando llega mercancía, se apunta en papel o en Excel, y las ventas o salidas no siempre se registran al momento.
 
 Esto hace que los datos no estén actualizados y que, para saber si queda un producto, haya que preguntar a los trabajadores o revisar las estanterías. Además, cada local puede llevar su propio control, lo que dificulta tener una visión general del negocio.
 
-## 2.3. Problemas y consecuencias
+## 3. Problemas y consecuencias
 
 Los principales problemas que se han identificado son:
 
@@ -24,7 +24,7 @@ Los principales problemas que se han identificado son:
 - Falta de comunicación entre los diferentes locales.
 - Informes realizados manualmente y con datos poco fiables.
 
-## 2.4. Propuesta de StockLink (To-Be)
+## 4. Propuesta de StockLink (To-Be)
 
 StockLink busca solucionar estos problemas mediante una aplicación sencilla que permita controlar el stock desde el móvil, la tablet o el ordenador.
 
@@ -40,9 +40,9 @@ Las principales ventajas serán:
 
 De esta manera, se pretende ahorrar tiempo, reducir errores y facilitar el trabajo diario de las empresas.
 
-## 2.5. Aportación documental
+## 5. Aportación documental
 
-### 2.5.1. Investigación y bases teóricas
+### 5.1. Investigación y bases teóricas
 
 La idea de StockLink se apoya en diferentes estudios relacionados con la gestión de inventarios.
 
@@ -52,13 +52,13 @@ Por otro lado, disponer de información actualizada ayuda a organizar mejor las 
 
 Las referencias utilizadas se completarán posteriormente con el formato bibliográfico que se solicite.
 
-### 2.5.2. Flujo actual y flujo propuesto
+### 5.2. Flujo actual y flujo propuesto
 
 **Situación actual:** la mercancía llega, se revisa y se apunta manualmente. Las salidas no siempre se registran y, cuando se necesita reponer un producto, muchas veces ya se ha agotado. Finalmente, se realiza un recuento para corregir los errores.
 
 **Situación propuesta:** la mercancía se registra en StockLink y el stock se actualiza automáticamente. Cuando se venden o utilizan productos, se registra su salida. Si quedan pocas unidades, la aplicación avisa para facilitar la reposición.
 
-### 2.5.3. Necesidades principales de la aplicación
+### 5.3. Necesidades principales de la aplicación
 
 Para solucionar los problemas detectados, StockLink deberá incluir las siguientes funciones y características:
 
