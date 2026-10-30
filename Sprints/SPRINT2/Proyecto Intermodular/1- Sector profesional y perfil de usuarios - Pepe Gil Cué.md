@@ -1,7 +1,7 @@
 # Sprint 2 - Sector profesional y perfil de usuarios
-## 2.1. Sector profesional y perfil de usuarios
+## 1. Sector profesional y perfil de usuarios
 
-## 2.1.1. Caracterización del sector
+## 1.1. Caracterización del sector
 
 StockLink se dirige al sector de la gestión logística y el control de inventario en PYMEs. El público objetivo son negocios con uno o varios locales (retail, hostelería, farmacias y almacenes) que hoy gestionan su stock en Excel, en papel o de memoria, así como multiempresas y franquicias pequeñas-medianas que necesitan ver todos sus locales desde una misma sesión.
 
@@ -19,7 +19,7 @@ Es un sector con un nivel de digitalización medio-bajo. Las empresas son consci
 
 ---
 
-## 2.1.2. Segmentación de perfiles de usuario
+## 1.2. Segmentación de perfiles de usuario
 
 Dentro de cada organización se identifican tres perfiles de usuario final: gerentes, encargados de local y personal operativo.
 
